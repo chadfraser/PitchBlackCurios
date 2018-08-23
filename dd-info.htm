@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body  {background-color: rgb(67, 67, 67);}
+  h1    {color: white;
+         text-align:center;}
+  h2    {color: white;}
+  ul    {list-style-type: none;
+         margin: 0px;
+         padding-left: 5px;}
+  ul.inner {padding-left: 25px;}
+  li    {font-family:lucida console;
+         font-size: 14px;
+         text-decoration: none;}
+
+  li.heirloom  {color: rgb(140, 115, 190);}
+  li.loot      {color: rgb(250, 250, 0);}
+  li.scouting  {color: rgb(100, 255, 75);}
+  li.buff      {color: rgb(255, 180, 100);}
+  li.summon    {color: rgb(200, 125, 160);}
+  li.negative  {color: rgb(255, 80, 65);}
+  li.positive  {color: rgb(75, 180, 255);}
+  li.none      {color: rgb(200, 200, 200);}
+  table        {table-layout: fixed;
+                width: 100%;}
+  th.leftcol   {width: 5%;}
+
+  table, th {border: 1px solid black;
+             border-collapse: collapse;
+             padding: 10px;
+             background-color: rgb(100, 100, 100);
+             color: rgb(200, 200, 200);
+             text-align: center;}
+  td  {border: 1px solid black;
+       border-collapse: collapse;background-color: rgb(67, 67, 67);
+       color: rgb(200, 200, 200);
+       vertical-align: top;
+       margin: 0px;
+       text-align:left;}
+  td.curioimg {text-align:center;}
+
+  img      {height: 100%;
+            max-height: 100px;}
+  img.item {height: 10%;
+            max-height: 60px;
+            float: left;}
+
+</style>
+<title>Pitch Black Dungeon enemies</title>
+</head>
+
+<body>
+<h1>CURIOS</h1>
+<h2>Ruins</h2>
+<!-- <img src="https://d1u5p3l4wpay3k.cloudfront.net/darkestdungeon_gamepedia/thumb/4/4f/Crate.png/180px-Crate.png" style="float:left"> -->
+
+
+<table>
+  <tr>
+    <th class="leftcol">Curio</th>
+    <th>Ancient Artifact</th>
+    <th>Crate</th>
+    <th>Discarded Pack</th>
+    <th>Eldritch Altar</th>
+  </tr>
+
+  <tr>
+    <th class="leftcol">Image</th>
+    <td class="curioimg"><img src="https://d1u5p3l4wpay3k.cloudfront.net/darkestdungeon_gamepedia/thumb/1/15/Ancient_Artifact.png/180px-Ancient_Artifact.png"></td>
+    <td class="curioimg"><img src="https://steamuserimages-a.akamaihd.net/ugc/38614507765727122/22A8154DC70CDFAD15F45891072B196360CFB6B9/"></td>
+    <td class="curioimg"><img src="https://steamuserimages-a.akamaihd.net/ugc/38614507765837398/EC6A8198EDEB15212F29BCBEC2807057766BE8CD/"></td>
+    <td class="curioimg"><img src="https://steamuserimages-a.akamaihd.net/ugc/38614507765841396/181D2A1BD6F7912BC5D8E5FB3A9E7500EBFE7E4B/"></td>
+  </tr>
+
+  <tr>
+    <th class="leftcol">Cleansing Without Items</th>
+    <td>
+      <ul>
+        <li class="loot">100%: Gold++ x2</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li class="heirloom">75%: Heirlooms x2</li>
+        <li class="none">25%: Nothing</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li class="loot">50%: Any loot <br>&nbsp;&nbsp;&nbsp;&nbsp; Gold x2</li>
+        <li class="scouting">30%: Scouting</li>
+          <ul class="inner">
+            <li class="scouting">50%: Curios for 1 room</li>
+            <li class="scouting">30%: All for 2 rooms</li>
+            <li class="scouting">50%: Hallway battles for 0 rooms</li>
+          </ul>
+        <li class="none">20%: Nothing</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li class="negative">60%: Stress +20</li>
+        <li class="nothing">30%: Nothing</li>
+        <li class="positive">10%: Purge Negative Quirk </li>
+      </ul>
+    </td>
+  </tr>
+
+  <tr>
+    <th class="leftcol" rowspan="4">Cleansing With Items</th>
+    <td><img class="item" src="https://d1u5p3l4wpay3k.cloudfront.net/darkestdungeon_gamepedia/2/25/Holy_Water.png">
+      <ul>
+        <li class="loot">&nbsp100%: Gold++ x2</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li class="heirloom">75%: Heirlooms x2</li>
+        <li class="none">25%: Nothing</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li class="img">50%: Any loot <br>&nbsp;&nbsp;&nbsp;&nbsp; Gold x2</li>
+        <li class="scouting">30%: Scouting</li>
+          <ul class="inner">
+            <li class="scouting">50%: Curios for 1 room</li>
+            <li class="scouting">30%: All for 2 rooms</li>
+            <li class="scouting">50%: Hallway battles for 0 rooms</li>
+          </ul>
+        <li class="none">20%: Nothing</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li class="negative">60%: Stress +20</li>
+        <li class="nothing">30%: Nothing</li>
+        <li class="positive">10%: Purge Negative Quirk </li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
