@@ -8,16 +8,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="curio-layout.css">
 <title>Pitch Black Dungeon curios</title>
-<script>
-  var audio = document.getElementById("narrator-audio");
-  audio.volume = 0.2;
-</script>
 </head>
 
 <body>
 
 <h1>CURIOS</h1>
-<h2>Shared Curios</h2>
+<h2>Global Curios</h2>
 
 <table>
   <tr>
@@ -61,16 +57,14 @@
   </tr>
 
   <tr>
-    <th class="leftcol" rowspan="4">Cleansing With Items</th>
+    <th class="leftcol">Cleansing With Items</th>
     <td>
       <div class="item-interaction">
         <div>
           <img class="item" src="provision-images/key.png" alt="Skeleton Key" title="Gems/Trapezohedron/Trinket x3">
         </div>
         <div>
-          <p class="loot">
-          Gems/Trapezohedron/Trinket x3
-          </p>
+          <p class="loot">Gems/Trapezohedron/Trinket x3</p>
         </div>
       </div>
 
@@ -79,9 +73,7 @@
           <img class="item" src="provision-images/shard1.png" alt="Shimmering Shard" title="Summon the Collector (A)">
         </div>
         <div>
-          <p class="summon">
-          Summon the Collector (A)
-          </p>
+          <p class="summon">Summon the Collector (A)</p>
         </div>
       </div>
 
@@ -90,9 +82,7 @@
           <img class="item" src="provision-images/shard2.png" alt="Glowing Shard" title="Summon the Collector (B)">
         </div>
         <div>
-          <p class="summon">
-          Summon the Collector (B)
-          </p>
+          <p class="summon">Summon the Collector (B)</p>
         </div>
       </div>
 
@@ -101,9 +91,7 @@
           <img class="item" src="provision-images/shard3.png" alt="Vibrant Shard" title="Summon the Collector (C)">
         </div>
         <div>
-          <p class="summon">
-          Summon the Collector (C)
-          </p>
+          <p class="summon">Summon the Collector (C)</p>
         </div>
       </div>
     </td>
@@ -121,9 +109,7 @@
           <img class="item same-effect" src="provision-images/luminous-concoction.png" alt="Ancestor's Luminous Concoction" title="Any loot x2,  Gold++">
         </div>
         <div>
-          <p class="loot">
-          Any loot x2 <br> Gold++
-          </p>
+          <p class="loot">Any loot x2 <br> Gold++</p>
         </div>
       </div>
     </td>
@@ -134,9 +120,7 @@
           <img class="item same-effect" src="provision-images/remedy-resolve.png" alt="Remedy of Resolve" title="Purge Negative Quirk">
         </div>
         <div>
-          <p class="positive">
-          Purge Negative Quirk
-          </p>
+          <p class="positive">Purge Negative Quirk</p>
         </div>
       </div>
       <div class="item-interaction">
@@ -144,9 +128,7 @@
           <img class="item" src="provision-images/caustic-solution.png" alt="Caustic Solution" title="Corrupting Strength Potion/Draught of Eldritch">
         </div>
         <div>
-          <p class="loot">
-          Corrupting Strength Potion/Draught of Eldritch
-          </p>
+          <p class="loot">Corrupting Strength Potion/Draught of Eldritch</p>
         </div>
       </div>
       <div class="item-interaction">
@@ -154,10 +136,275 @@
           <img class="item" src="provision-images/eldritch-blood.png" alt="Vial of Eldritch Blood" title="Purge Positive Quirk">
         </div>
         <div>
-          <p class="negative">
-          Purge Positive Quirk
-          </p>
+          <p class="negative">Purge Positive Quirk</p>
         </div>
+      </div>
+    </td>
+  </tr>
+
+
+  <tr>
+    <th class="leftcol">Curio</th>
+    <th>Heirloom Chest</th>
+    <th>Locked Strongbox</th>
+    <th>Mummified Remains</th>
+    <th>Sack</th>
+  </tr>
+
+  <tr>
+    <th class="leftcol">Image</th>
+    <td class="curioimg"><img src="curio-images/heirloom-chest.png" alt="Heirloom Chest"></td>
+    <td class="curioimg"><img src="curio-images/locked-strongbox.png" alt="Locked Strongbox"></td>
+    <td class="curioimg"><img src="curio-images/mummy.png" alt="Mummified Remains"></td>
+    <td class="curioimg"><img src="curio-images/sack.png" alt="Sack"></td>
+  </tr>
+
+  <tr>
+    <th class="leftcol">Cleansing Without Items</th>
+    <td>
+      <p class="negative">50%: Trap</p>
+      <p class="negative indent">50%: Blight (3 pts/4 rounds)</p>
+      <p class="negative indent">50%: Blight (5 pts/4 rounds)</p>
+      <p class="heirloom">25%: Heirloom x2</p>
+      <p class="nothing">25%: Nothing</p>
+    </td>
+    <td>
+      <p class="negative">100%: Trap</p>
+      <p class="negative indent">50%: Blight (3 pts/4 rounds)</p>
+      <p class="negative indent">50%: Bleed (3 pts/4 rounds)</p>
+    </td>
+    <td>
+      <p class="heirloom">50%: Heirloom <br> &nbsp;&nbsp;&nbsp;&nbsp; Gold+</p>
+      <p class="negative">30%: Random Disease</p>
+      <p class="nothing">20%: Nothing</p>
+    </td>
+    <td>
+      <p class="loot">75%: Gold <br> &nbsp;&nbsp;&nbsp;&nbsp; Gems</p>
+      <p class="nothing">25%: Nothing</p>
+    </td>
+  </tr>
+
+  <tr>
+    <th class="leftcol">Cleansing With Items</th>
+    <td>
+      <div class="item-interaction">
+        <div>
+          <img class="item" src="provision-images/dram-antidote.png" alt="Dram of Antidote" title="Heirloom x4">
+        </div>
+        <div>
+          <p class="heirloom">Heirloom x4</p>
+        </div>
+      </div>
+
+      <div class="item-interaction">
+        <div>
+          <img class="item" src="provision-images/antivenom.png" alt="Antivenom" title="Heirloom x3">
+          <img class="item" src="provision-images/key.png" alt="Skeleton Key" title="Heirloom x3">
+        </div>
+        <div>
+          <p class="heirloom">Heirloom x3</p>
+        </div>
+      </div>
+
+      <div class="item-interaction">
+        <div>
+          <img class="item" src="provision-images/shovel.png" alt="Shovel" title="Heirloom x2">
+          <img class="item" src="provision-images/dagger.png" alt="Small Dagger" title="Heirloom x2">
+        </div>
+        <div>
+          <p class="heirloom">Heirloom x2</p>
+        </div>
+      </div>
+    </td>
+    <td>
+      <div class="item-interaction">
+        <div>
+          <img class="item" src="provision-images/dram-antidote.png" alt="Dram of Antidote" title="Any loot x2,  Gold+">
+        </div>
+        <div>
+          <p class="loot">Any loot x2 <br> Gold++</p>
+        </div>
+      </div>
+
+      <div class="item-interaction">
+        <div>
+          <img class="item" src="provision-images/antivenom.png" alt="Antivenom" title="Any loot x2">
+          <img class="item" src="provision-images/bandage.png" alt="Bandage" title="Any loot x2">
+          <img class="item" src="provision-images/key.png" alt="Skeleton Key" title="Any loot x2">
+        </div>
+        <div>
+          <p class="loot">Any loot x2</p>
+        </div>
+      </div>
+
+      <div class="item-interaction">
+        <div>
+          <img class="item" src="provision-images/shovel.png" alt="Shovel" title="Any loot">
+          <img class="item" src="provision-images/dagger.png" alt="Small Dagger" title="Any loot">
+        </div>
+        <div>
+          <p class="loot">Any loot</p>
+        </div>
+      </div>
+    </td>
+    <td>
+      <div class="item-interaction">
+        <div>
+          <img class="item" src="provision-images/immunization-philter.png" alt="Immunization Philter" title="Trinket/Gold+ x2,  Gold+,  Heirloom">
+        </div>
+        <div>
+          <p class="heirloom">Trinket/Gold+ x2 <br> Gold+ <br> Heirloom</p>
+        </div>
+      </div>
+
+      <div class="item-interaction">
+        <div>
+          <img class="item" src="provision-images/herbs.png" alt="Medicinal Herbs" title="Trinket/Gold+ x2,  Heirloom">
+        </div>
+        <div>
+          <p class="heirloom">Trinket/Gold+ x2 <br> Heirloom</p>
+        </div>
+      </div>
+
+      <div class="item-interaction">
+        <div>
+          <img class="item" src="provision-images/caustic-solution.png" alt="Caustic Solution" title="Draught of Man">
+        </div>
+        <div>
+          <p class="loot">Draught of Man</p>
+        </div>
+      </div>
+
+      <div class="item-interaction">
+        <div>
+          <img class="item" src="provision-images/dagger.png" alt="Small Dagger" title="Bandage">
+        </div>
+        <div>
+          <p class="loot">Bandage</p>
+        </div>
+      </div>
+    </td>
+    <td>
+      <div class="item-interaction">
+        <p class="null">None</p>
+      </div>
+    </td>
+  </tr>
+
+  <tr>
+    <th class="leftcol">Curio</th>
+    <th>Sconce</th>
+    <th>Shambler's Altar</th>
+    <th>Stack of Books</th>
+    <th>Unlocked Strongbox</th>
+  </tr>
+
+  <tr>
+    <th class="leftcol">Image</th>
+    <td class="curioimg"><img src="curio-images/sconce.png" alt="Sconce"></td>
+    <td class="curioimg"><img src="curio-images/shambler.png" alt="Shambler's Altar"></td>
+    <td class="curioimg"><img src="curio-images/books.png" alt="Stack of Books"></td>
+    <td class="curioimg"><img src="curio-images/unlocked-strongbox.png" alt="Unlocked Strongbox"></td>
+  </tr>
+
+  <tr>
+    <th class="leftcol">Cleansing Without Items</th>
+    <td>
+      <p class="loot">75%: Torch</p>
+      <p class="nothing">25%: Nothing</p>
+    </td>
+    <td>
+      <p class="nothing">100%: Nothing</p>
+    </td>
+    <td>
+      <p class="negative">40%: Trap</p>
+      <p class="negative indent">50%: Stress +25</p>
+      <p class="negative indent">50%: Torch -25</p>
+      <p class="nothing">40%: Random Quirk</p>
+      <p class="positive indent">66%: Positive Quirk</p>
+      <p class="negative indent">33%: Negative Quirk</p>
+      <p class="nothing">20%: Nothing</p>
+    </td>
+    <td>
+      <p class="nothing">50%: Nothing</p>
+      <p class="negative">25%: Trap</p>
+      <p class="negative indent">50%: Blight (3 pts/4 rounds)</p>
+      <p class="negative indent">50%: Bleed (3 pts/4 rounds)</p>
+      <p class="loot">25%: Any loot x2</p>
+    </td>
+  </tr>
+
+  <tr>
+    <th class="leftcol">Cleansing With Items</th>
+    <td>
+      <div class="item-interaction">
+        <div>
+          <img class="item" src="provision-images/caustic-solution.png" alt="Caustic Solution" title="Ancestor's Luminous Concoction">
+        </div>
+        <div>
+          <p class="loot">Ancestor's Luminous Concotion</p>
+        </div>
+      </div>
+
+      <div class="item-interaction">
+        <div>
+          <img class="item" src="provision-images/torch.png" alt="Torch" title="Torch x2">
+        </div>
+        <div>
+          <p class="loot">Torch x2</p>
+        </div>
+      </div>
+
+      <div class="item-interaction">
+        <div>
+          <img class="item" src="provision-images/luminous-concoction.png" alt="Ancestor's Luminous Concoction" title="Torch">
+        </div>
+        <div>
+          <p class="loot">Torch</p>
+        </div>
+      </div>
+    </td>
+    <td>
+      <div class="item-interaction">
+        <div>
+          <img class="item" src="provision-images/eldritch-blood.png" alt="Vial of Eldritch Blood" title="Summon the Shambler">
+        </div>
+        <div>
+          <p class="summon">Summon the Shambler</p>
+        </div>
+      </div>
+    </td>
+    <td>
+      <div class="item-interaction">
+        <div>
+          <img class="item" src="provision-images/luminous-concoction.png" alt="Ancestor's Luminous Concoction">
+        </div>
+        <div>
+          <p class="buff">75%: +5 ACC <br> &nbsp;&nbsp;&nbsp;&nbsp; +3% CRIT <br> 25%: +3 ACC <br> &nbsp;&nbsp;&nbsp;&nbsp; +2% CRIT</p>
+        </div>
+      </div>
+
+      <div class="item-interaction">
+        <div>
+          <img class="item" src="provision-images/torch.png" alt="Torch">
+        </div>
+        <div>
+          <p class="buff">60%: +3 ACC <br> &nbsp;&nbsp;&nbsp;&nbsp; +5% CRIT <br> 40%: +5 ACC <br> &nbsp;&nbsp;&nbsp;&nbsp; +3% CRIT</p>
+        </div>
+      </div>
+
+      <div class="item-interaction">
+        <div>
+          <img class="item" src="provision-images/dagger.png" alt="Small Dagger" title="Journal Page/Short Poem x2">
+        </div>
+        <div>
+          <p class="loot">Journal Page/Short Poem x2</p>
+        </div>
+      </div>
+    </td>
+    <td>
+      <div class="item-interaction">
+        <p class="null">None</p>
       </div>
     </td>
   </tr>
@@ -166,5 +413,9 @@
 <audio autoplay id="narrator-audio">
   <source src="voiceover.ogg" type="audio/ogg">
 </audio>
+<script>
+  var audio = document.getElementById("narrator-audio");
+  audio.volume = 0.05;
+</script>
 </body>
 </html>
