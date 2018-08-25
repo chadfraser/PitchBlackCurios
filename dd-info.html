@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="Chad Fraser">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="curio-layout.css">
+<title>Pitch Black Dungeon enemies</title>
+</head>
+
+<body>
+
+<h1>CURIOS</h1>
+<h2>Ruins</h2>
+
+<table>
+  <tr>
+    <th class="leftcol">Curio</th>
+    <th>Ancient Artifact</th>
+    <th>Crate</th>
+    <th>Discarded Pack</th>
+    <th>Eldritch Altar</th>
+  </tr>
+
+  <tr>
+    <th class="leftcol">Image</th>
+    <td class="curioimg"><img src="curio-images/ancient-artifact.png" alt="Ancient Artifact"></td>
+    <td class="curioimg"><img src="curio-images/crate.png" alt="Crate"></td>
+    <td class="curioimg"><img src="curio-images/pack.png" alt="Discarded Pack"></td>
+    <td class="curioimg"><img src="curio-images/eldritch-altar.png" alt="Eldritch Altar"></td>
+  </tr>
+
+  <tr>
+    <th class="leftcol">Cleansing Without Items</th>
+    <td>
+      <ul>
+        <li class="loot">100%: Gold++ x2</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li class="heirloom">75%: Heirlooms x2</li>
+        <li class="nothing">25%: Nothing</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li class="loot">50%: Any loot <br>&nbsp;&nbsp;&nbsp;&nbsp; Gold++</li>
+        <li class="scouting">30%: Scouting</li>
+          <ul class="inner">
+            <li class="scouting">50%: Curios for 1 room</li>
+            <li class="scouting">30%: All for 2 rooms</li>
+            <li class="scouting">50%: Hallway battles for 0 rooms</li>
+          </ul>
+        <li class="nothing">20%: Nothing</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li class="negative">60%: Stress +20</li>
+        <li class="nothing">30%: Nothing</li>
+        <li class="positive">10%: Purge Negative Quirk </li>
+      </ul>
+    </td>
+  </tr>
+
+  <tr>
+    <th class="leftcol" rowspan="4">Cleansing With Items</th>
+    <td><img class="item" src="provision-images/key.png" alt="Skeleton Key" title="Gems/Trapezohedron/Trinket x3">
+
+      <ul>
+        <li class="loot">&nbspGems/Trapezohedron/Trinket x3</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li class="null">None</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li class="img">50%: Any loot <br>&nbsp;&nbsp;&nbsp;&nbsp; Gold++</li>
+        <li class="scouting">30%: Scouting</li>
+          <ul class="inner">
+            <li class="scouting">50%: Curios for 1 room</li>
+            <li class="scouting">30%: All for 2 rooms</li>
+            <li class="scouting">50%: Hallway battles for 0 rooms</li>
+          </ul>
+        <li class="nothing">20%: Nothing</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li class="negative">60%: Stress +20</li>
+        <li class="nothing">30%: Nothing</li>
+        <li class="positive">10%: Purge Negative Quirk </li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+<audio autoplay>
+  <source src="voiceover.ogg" type="audio/ogg">
+</body>
+</html>
