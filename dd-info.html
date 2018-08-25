@@ -7,13 +7,17 @@
 <meta name="author" content="Chad Fraser">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="curio-layout.css">
-<title>Pitch Black Dungeon enemies</title>
+<title>Pitch Black Dungeon curios</title>
+<script>
+  var audio = document.getElementById("narrator-audio");
+  audio.volume = 0.2;
+</script>
 </head>
 
 <body>
 
 <h1>CURIOS</h1>
-<h2>Ruins</h2>
+<h2>Shared Curios</h2>
 
 <table>
   <tr>
@@ -35,73 +39,79 @@
   <tr>
     <th class="leftcol">Cleansing Without Items</th>
     <td>
-      <ul>
-        <li class="loot">100%: Gold++ x2</li>
-      </ul>
+      <p class="loot">100%: Gold++ x2</p>
     </td>
     <td>
-      <ul>
-        <li class="heirloom">75%: Heirlooms x2</li>
-        <li class="nothing">25%: Nothing</li>
-      </ul>
+      <p class="heirloom">75%: Heirlooms x2</p>
+      <p class="nothing">25%: Nothing</p>
     </td>
     <td>
-      <ul>
-        <li class="loot">50%: Any loot <br>&nbsp;&nbsp;&nbsp;&nbsp; Gold++</li>
-        <li class="scouting">30%: Scouting</li>
-          <ul class="inner">
-            <li class="scouting">50%: Curios for 1 room</li>
-            <li class="scouting">30%: All for 2 rooms</li>
-            <li class="scouting">50%: Hallway battles for 0 rooms</li>
-          </ul>
-        <li class="nothing">20%: Nothing</li>
-      </ul>
+      <p class="loot">50%: Any loot <br>&nbsp;&nbsp;&nbsp;&nbsp; Gold++</p>
+      <p class="scouting">30%: Scouting</p>
+      <p class="scouting indent">50%: Curios for 1 room</p>
+      <p class="scouting indent">30%: All for 2 rooms</p>
+      <p class="scouting indent">50%: Hallway battles for 0 rooms</p>
+      <p class="nothing">20%: Nothing</p>
     </td>
     <td>
-      <ul>
-        <li class="negative">60%: Stress +20</li>
-        <li class="nothing">30%: Nothing</li>
-        <li class="positive">10%: Purge Negative Quirk </li>
-      </ul>
+      <p class="negative">60%: Stress +20</p>
+      <p class="nothing">30%: Nothing</p>
+      <p class="positive">10%: Purge Negative Quirk</p>
     </td>
   </tr>
 
   <tr>
     <th class="leftcol" rowspan="4">Cleansing With Items</th>
-    <td><img class="item" src="provision-images/key.png" alt="Skeleton Key" title="Gems/Trapezohedron/Trinket x3">
-
-      <ul>
-        <li class="loot">&nbspGems/Trapezohedron/Trinket x3</li>
-      </ul>
+    <td>
+      <p class="loot">
+        <img class="item" src="provision-images/key.png" alt="Skeleton Key" title="Gems/Trapezohedron/Trinket x3">
+        Gems/Trapezohedron/Trinket x3
+      </p>
+      <p class="summon">
+        <img class="item" src="provision-images/shard1.png" alt="Shimmering Shard" title="Summon the Collector (A)">
+        Summon the Collector (A)
+      </p>
+      <p class="summon">
+        <img class="item" src="provision-images/shard2.png" alt="Glowing Shard" title="Summon the Collector (B)">
+        Summon the Collector (B)
+      </p>
+      <p class="summon">
+        <img class="item" src="provision-images/shard3.png" alt="Vibrant Shard" title="Summon the Collector (C)">
+        Summon the Collector (C)
+      </p>
     </td>
     <td>
-      <ul>
-        <li class="null">None</li>
-      </ul>
+      <p class="null">None</p>
     </td>
     <td>
-      <ul>
-        <li class="img">50%: Any loot <br>&nbsp;&nbsp;&nbsp;&nbsp; Gold++</li>
-        <li class="scouting">30%: Scouting</li>
-          <ul class="inner">
-            <li class="scouting">50%: Curios for 1 room</li>
-            <li class="scouting">30%: All for 2 rooms</li>
-            <li class="scouting">50%: Hallway battles for 0 rooms</li>
-          </ul>
-        <li class="nothing">20%: Nothing</li>
-      </ul>
+      <p class="loot">
+        <img class="item" src="provision-images/torch.png" alt="Torch" title="Any loot x2,  Gold++">
+        <img class="item same-effect" src="provision-images/luminous-concoction.png" alt="Ancestor's Luminous Concoction" title="Any loot x2,  Gold++">
+        Any loot x2
+        <br>
+        Gold++
+      </p>
     </td>
     <td>
-      <ul>
-        <li class="negative">60%: Stress +20</li>
-        <li class="nothing">30%: Nothing</li>
-        <li class="positive">10%: Purge Negative Quirk </li>
-      </ul>
+      <p class="positive">
+        <img class="item" src="provision-images/holy-water.png" alt="Holy Water" title="Purge Negative Quirk">
+        <img class="item same-effect" src="provision-images/remedy-resolve.png" alt="Remedy of Resolve" title="Purge Negative Quirk">
+        Purge Negative Quirk
+      </p>
+      <p class="loot">
+        <img class="item" src="provision-images/caustic-solution.png" alt="Caustic Solution" title="Corrupting Strength Potion/Draught of Eldritch">
+        Corrupting Strength Potion/Draught of Eldritch
+      </p>
+      <p class="negative">
+        <img class="item" src="provision-images/eldritch-blood.png" alt="Vial of Eldritch Blood" title="Purge Positive Quirk">
+        Purge Positive Quirk
+      </p>
     </td>
   </tr>
 </table>
 
-<audio autoplay>
+<audio autoplay id="narrator-audio">
   <source src="voiceover.ogg" type="audio/ogg">
+</audio>
 </body>
 </html>
