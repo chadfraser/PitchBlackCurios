@@ -25,407 +25,1691 @@
   </ul>
 </div>
 
-<table>
-  <tr>
-    <th class="leftcol">Curio</th>
-    <th>Ancient Artifact</th>
-    <th>Crate</th>
-    <th>Discarded Pack</th>
-    <th>Eldritch Altar</th>
-  </tr>
+<div id="global" class="table">
+  <table>
+    <tr>
+      <th class="leftcol">Curio</th>
+      <th>Ancient Artifact</th>
+      <th>Crate</th>
+      <th>Discarded Pack</th>
+      <th>Eldritch Altar</th>
+      <th>Heirloom Chest</th>
+      <th>Locked Strongbox</th>
+      <th>Mummified Remains</th>
+      <th>Sack</th>
+      <th>Sconce</th>
+      <th>Shambler's Altar</th>
+      <th>Stack of Books</th>
+      <th>Unlocked Strongbox</th>
+    </tr>
 
-  <tr>
-    <th class="leftcol">Image</th>
-    <td class="curioimg"><img src="curio-images/ancient-artifact.png" !--alt="Ancient Artifact"></td>
-    <td class="curioimg"><img src="curio-images/crate.png" alt="Crate"></td>
-    <td class="curioimg"><img src="curio-images/pack.png" alt="Discarded Pack"></td>
-    <td class="curioimg"><img src="curio-images/eldritch-altar.png" alt="Eldritch Altar"></td>
-  </tr>
+    <tr>
+      <th class="leftcol">Image</th>
+      <td class="curioimg"><img src="curio-images/ancient-artifact.png" alt="Ancient Artifact"></td>
+      <td class="curioimg"><img src="curio-images/crate.png" alt="Crate"></td>
+      <td class="curioimg"><img src="curio-images/pack.png" alt="Discarded Pack"></td>
+      <td class="curioimg"><img src="curio-images/eldritch-altar.png" alt="Eldritch Altar"></td>
+      <td class="curioimg"><img src="curio-images/heirloom-chest.png" alt="Heirloom Chest"></td>
+      <td class="curioimg"><img src="curio-images/locked-strongbox.png" alt="Locked Strongbox"></td>
+      <td class="curioimg"><img src="curio-images/mummy.png" alt="Mummified Remains"></td>
+      <td class="curioimg"><img src="curio-images/sack.png" alt="Sack"></td>
+      <td class="curioimg"><img src="curio-images/sconce.png" alt="Sconce"></td>
+      <td class="curioimg"><img src="curio-images/shambler.png" alt="Shambler's Altar"></td>
+      <td class="curioimg"><img src="curio-images/books.png" alt="Stack of Books"></td>
+      <td class="curioimg"><img src="curio-images/unlocked-strongbox.png" alt="Unlocked Strongbox"></td>
+    </tr>
 
-  <tr>
-    <th class="leftcol">Cleansing Without Items</th>
-    <td>
-      <p class="loot">100%: Gold++ x2</p>
-    </td>
-    <td>
-      <p class="heirloom">75%: Heirlooms x2</p>
-      <p class="nothing">25%: Nothing</p>
-    </td>
-    <td>
-      <p class="loot">50%: Any loot <br>&nbsp;&nbsp;&nbsp;&nbsp; Gold++</p>
-      <p class="scouting">30%: Scouting</p>
-      <p class="scouting indent">50%: Curios for 1 room</p>
-      <p class="scouting indent">30%: All for 2 rooms</p>
-      <p class="scouting indent">20%: Hallway battles for 0 rooms</p>
-      <p class="nothing">20%: Nothing</p>
-    </td>
-    <td>
-      <p class="negative">60%: Stress +20</p>
-      <p class="nothing">30%: Nothing</p>
-      <p class="positive">10%: Purge Negative Quirk</p>
-    </td>
-  </tr>
+    <tr>
+      <th class="leftcol">Cleansing Without Items</th>
+      <td>
+        <p class="loot" title="Someone left behind quite a stash.">100%: Gold++ x2</p>
+      </td>
+      <td>
+        <p class="heirloom" title="The crate contains stashed heirlooms!">75%: Heirlooms x2</p>
+        <p class="nothing" title="The crate is empty.">25%: Nothing</p>
+      </td>
+      <td>
+        <p class="loot" title="The pack contains loot!">
+          50%: Any loot <br> &nbsp;&nbsp;&nbsp;&nbsp; Gold++</p>
+        <p class="scouting" title="The path ahead is crudely marked onto some parchment.">
+          30%: Scouting</p>
+        <p class="scouting indent" title="The path ahead is crudely marked onto some parchment.">
+          50%: Curios for 1 room</p>
+        <p class="scouting indent" title="The path ahead is crudely marked onto some parchment.">
+          30%: All for 2 rooms</p>
+        <p class="scouting indent" title="The path ahead is crudely marked onto some parchment.">
+          20%: Hallway battles for 0 rooms</p>
+        <p class="nothing" title="The pack has already been looted.">20%: Nothing</p>
+      </td>
+      <td>
+        <p class="negative" title="A terrifying presence is felt nearby.">60%: Stress +20</p>
+        <p class="nothing"  title="The altar's purpose is purely decorative.">30%: Nothing</p>
+        <p class="positive" title="An aura engulfs the hero, shattering an illness within.">
+          10%: Purge Negative Quirk</p>
+      </td>
+      <td>
+        <p class="negative" title="A poison trap lay inside.">50%: Trap</p>
+        <p class="negative indent" title="A poison trap lay inside.">50%: Blight (3 pts/4 rounds)</p>
+        <p class="negative indent" title="A poison trap lay inside.">50%: Blight (5 pts/4 rounds)</p>
+        <p class="heirloom" title="The contents are yours!">25%: Heirloom x2</p>
+        <p class="nothing" title="The chest is empty.">25%: Nothing</p>
+      </td>
+      <td>
+        <p class="negative" title="It's trapped!">100%: Trap</p>
+        <p class="negative indent" title="It's trapped!">50%: Blight (3 pts/4 rounds)</p>
+        <p class="negative indent" title="It's trapped!">50%: Bleed (3 pts/4 rounds)</p>
+      </td>
+      <td>
+        <p class="heirloom" title="Treasures are encased with the remains!">
+          50%: Heirloom <br> &nbsp;&nbsp;&nbsp;&nbsp; Gold+</p>
+        <p class="negative" title="The mummification process was done poorly...">30%: Random Disease</p>
+        <p class="nothing" title="There is nothing of value on the body.">20%: Nothing</p>
+      </td>
+      <td>
+        <p class="loot" title="The sack's contents are yours...">
+          75%: Gold <br> &nbsp;&nbsp;&nbsp;&nbsp; Gems</p>
+        <p class="nothing" title="The sack is empty.">25%: Nothing</p>
+      <td>
+        <p class="loot" title="You salvage the unburned torch.">75%: Torch</p>
+        <p class="nothing" title="The torch is expired.">25%: Nothing</p>
+      </td>
+      <td>
+        <p class="nothing" title="Touching the altar has no effect.">100%: Nothing</p>
+      </td>
+      <td>
+        <p class="negative">40%: Trap</p>
+        <p class="negative indent" title="The text starts to glow, and an eerie presence is felt.">
+          50%: Stress +25</p>
+        <p class="negative indent" title="The text starts to glow, and an eerie presence is felt.">
+          50%: Torchlight -25</p>
+        <p class="nothing">40%: Random Quirk</p>
+        <p class="positive indent" title="Reading a few pages has a lasting effect on the hero...">
+          66%: Positive Quirk</p>
+        <p class="negative indent" title="Reading a few pages has a lasting effect on the hero...">
+          33%: Negative Quirk</p>
+        <p class="nothing" title="The volumes are dessicated and unremarkable.">20%: Nothing</p>
+      </td>
+      <td>
+        <p class="nothing" title="The contents are yours!">50%: Nothing</p>
+        <p class="negative" title="The strongbox is trapped!">25%: Trap</p>
+        <p class="negative indent" title="The strongbox is trapped!">50%: Blight (3 pts/4 rounds)</p>
+        <p class="negative indent" title="The strongbox is trapped!">50%: Bleed (3 pts/4 rounds)</p>
+        <p class="loot" title="The strongbox is empty.">25%: Any loot x2</p>
+      </td>
+    </tr>
 
-  <tr>
-    <th class="leftcol">Cleansing With Items</th>
-    <td>
-      <div class="item-interaction">
-        <div>
-          <img class="item" src="provision-images/key.png" alt="Skeleton Key" title="Gems/Trapezohedron/Trinket x3">
+    <tr>
+      <th class="leftcol">Cleansing With Items</th>
+      <td>
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/key.png" alt="Skeleton Key"
+            title="The secret compartment contains great treasures!">
+          </div>
+          <div>
+            <p class="loot">Gems/Trapezohedron/Trinket x3</p>
+          </div>
         </div>
-        <div>
-          <p class="loot">Gems/Trapezohedron/Trinket x3</p>
-        </div>
-      </div>
 
-      <div class="item-interaction">
-        <div>
-          <img class="item" src="provision-images/shard1.png" alt="Shimmering Shard" title="Summon the Collector (A)">
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/shard1.png" alt="Shimmering Shard"
+            title="The shard pulsates violently when placed on the stash...">
+          </div>
+          <div>
+            <p class="summon">Summon the Collector (A)</p>
+          </div>
         </div>
-        <div>
-          <p class="summon">Summon the Collector (A)</p>
-        </div>
-      </div>
 
-      <div class="item-interaction">
-        <div>
-          <img class="item" src="provision-images/shard2.png" alt="Glowing Shard" title="Summon the Collector (B)">
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/shard2.png" alt="Glowing Shard"
+            title="The shard pulsates violently when placed on the stash...">
+          </div>
+          <div>
+            <p class="summon">Summon the Collector (B)</p>
+          </div>
         </div>
-        <div>
-          <p class="summon">Summon the Collector (B)</p>
-        </div>
-      </div>
 
-      <div class="item-interaction">
-        <div>
-          <img class="item" src="provision-images/shard3.png" alt="Vibrant Shard" title="Summon the Collector (C)">
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/shard3.png" alt="Vibrant Shard"
+            title="The shard pulsates violently when placed on the stash...">
+          </div>
+          <div>
+            <p class="summon">Summon the Collector (C)</p>
+          </div>
         </div>
-        <div>
-          <p class="summon">Summon the Collector (C)</p>
-        </div>
-      </div>
-    </td>
+      </td>
 
-    <td>
-      <div class="item-interaction">
-        <p class="null">None</p>
-      </div>
-    </td>
+      <td>
+        <div class="item-interaction">
+          <p class="null">None</p>
+        </div>
+      </td>
 
-    <td>
-      <div class="item-interaction">
-        <div>
-          <img class="item" src="provision-images/torch.png" alt="Torch" title="Any loot x2,  Gold++">
-          <img class="item same-effect" src="provision-images/luminous-concoction.png" alt="Ancestor's Luminous Concoction" title="Any loot x2,  Gold++">
+      <td>
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/torch.png" alt="Torch"
+            title="Taking a closer look, the hero notices a small pocket containing loot.">
+            <img class="item same-effect" src="provision-images/luminous-concoction.png"
+            alt="Ancestor's Luminous Concoction"
+            title="Taking a closer look, the hero notices a small pocket containing loot.">
+          </div>
+          <div>
+            <p class="loot">Any loot x2 <br> Gold++</p>
+          </div>
         </div>
-        <div>
-          <p class="loot">Any loot x2 <br> Gold++</p>
+      </td>
+      <td>
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/holy-water.png" alt="Holy Water"
+            title="The holy water purifies the altar!">
+            <img class="item same-effect" src="provision-images/remedy-resolve.png" alt="Remedy of Resolve"
+            title="The concoction purifies the altar!">
+          </div>
+          <div>
+            <p class="positive">Purge Negative Quirk</p>
+          </div>
         </div>
-      </div>
-    </td>
-    <td>
-      <div class="item-interaction">
-        <div>
-          <img class="item" src="provision-images/holy-water.png" alt="Holy Water" title="Purge Negative Quirk">
-          <img class="item same-effect" src="provision-images/remedy-resolve.png" alt="Remedy of Resolve" title="Purge Negative Quirk">
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/caustic-solution.png" alt="Caustic Solution"
+            title="The tentacles emit a mist that mixes with the liquid.">
+          </div>
+          <div>
+            <p class="loot">Corrupting Strength Potion/Draught of Eldritch</p>
+          </div>
         </div>
-        <div>
-          <p class="positive">Purge Negative Quirk</p>
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/eldritch-blood.png" alt="Vial of Eldritch Blood"
+            title="The blood boils and fills the hero with painful memories!">
+          </div>
+          <div>
+            <p class="negative">Purge Positive Quirk</p>
+          </div>
         </div>
-      </div>
-      <div class="item-interaction">
-        <div>
-          <img class="item" src="provision-images/caustic-solution.png" alt="Caustic Solution" title="Corrupting Strength Potion/Draught of Eldritch">
+      </td>
+      <td>
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/dram-antidote.png" alt="Dram of Antidote"
+            title="The potion does well to protect you against the trap within!">
+          </div>
+          <div>
+            <p class="heirloom">Heirloom x4</p>
+          </div>
         </div>
-        <div>
-          <p class="loot">Corrupting Strength Potion/Draught of Eldritch</p>
-        </div>
-      </div>
-      <div class="item-interaction">
-        <div>
-          <img class="item" src="provision-images/eldritch-blood.png" alt="Vial of Eldritch Blood" title="Purge Positive Quirk">
-        </div>
-        <div>
-          <p class="negative">Purge Positive Quirk</p>
-        </div>
-      </div>
-    </td>
-  </tr>
-</table>
-  
-<br>
-  
-<table>
-  <tr>
-    <th class="leftcol">Curio</th>
-    <th>Heirloom Chest</th>
-    <th>Locked Strongbox</th>
-    <th>Mummified Remains</th>
-    <th>Sack</th>
-  </tr>
 
-  <tr>
-    <th class="leftcol">Image</th>
-    <td class="curioimg"><img src="curio-images/heirloom-chest.png" alt="Heirloom Chest"></td>
-    <td class="curioimg"><img src="curio-images/locked-strongbox.png" alt="Locked Strongbox"></td>
-    <td class="curioimg"><img src="curio-images/mummy.png" alt="Mummified Remains"></td>
-    <td class="curioimg"><img src="curio-images/sack.png" alt="Sack"></td>
-  </tr>
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/antivenom.png" alt="Antivenom"
+            title="The antivenom neutralizes a poison trap in a hidden compartment!">
+            <img class="item" src="provision-images/key.png" alt="Skeleton Key"
+            title="The key unlocks a hidden compartment!">
+          </div>
+          <div>
+            <p class="heirloom">Heirloom x3</p>
+          </div>
+        </div>
 
-  <tr>
-    <th class="leftcol">Cleansing Without Items</th>
-    <td>
-      <p class="negative">50%: Trap</p>
-      <p class="negative indent">50%: Blight (3 pts/4 rounds)</p>
-      <p class="negative indent">50%: Blight (5 pts/4 rounds)</p>
-      <p class="heirloom">25%: Heirloom x2</p>
-      <p class="nothing">25%: Nothing</p>
-    </td>
-    <td>
-      <p class="negative">100%: Trap</p>
-      <p class="negative indent">50%: Blight (3 pts/4 rounds)</p>
-      <p class="negative indent">50%: Bleed (3 pts/4 rounds)</p>
-    </td>
-    <td>
-      <p class="heirloom">50%: Heirloom <br> &nbsp;&nbsp;&nbsp;&nbsp; Gold+</p>
-      <p class="negative">30%: Random Disease</p>
-      <p class="nothing">20%: Nothing</p>
-    </td>
-    <td>
-      <p class="loot">75%: Gold <br> &nbsp;&nbsp;&nbsp;&nbsp; Gems</p>
-      <p class="nothing">25%: Nothing</p>
-    </td>
-  </tr>
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/shovel.png" alt="Shovel"
+            title="You force the lid open!">
+            <img class="item" src="provision-images/dagger.png" alt="Small Dagger"
+            title="Your roguish nature may prove lucrative...">
+          </div>
+          <div>
+            <p class="heirloom">Heirloom x2</p>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/dram-antidote.png" alt="Dram of Antidote"
+            title="The dram protects you well">
+          </div>
+          <div>
+            <p class="loot">Any loot x2 <br> Gold++</p>
+          </div>
+        </div>
 
-  <tr>
-    <th class="leftcol">Cleansing With Items</th>
-    <td>
-      <div class="item-interaction">
-        <div>
-          <img class="item" src="provision-images/dram-antidote.png" alt="Dram of Antidote" title="Heirloom x4">
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/antivenom.png" alt="Antivenom"
+            title="The antivenom is an effective deterrent!">
+            <img class="item" src="provision-images/bandage.png" alt="Bandage"
+            title="You prepare yourself for the trap within...">
+            <img class="item" src="provision-images/key.png" alt="Skeleton Key"
+            title="The key safely unlocks the chest, disarming any trap!">
+          </div>
+          <div>
+            <p class="loot">Any loot x2</p>
+          </div>
         </div>
-        <div>
-          <p class="heirloom">Heirloom x4</p>
-        </div>
-      </div>
 
-      <div class="item-interaction">
-        <div>
-          <img class="item" src="provision-images/antivenom.png" alt="Antivenom" title="Heirloom x3">
-          <img class="item" src="provision-images/key.png" alt="Skeleton Key" title="Heirloom x3">
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/shovel.png" alt="Shovel"
+            title="You pry the lid open successfully...">
+            <img class="item" src="provision-images/dagger.png" alt="Small Dagger"
+            title="You attempt to pick the lock...">
+          </div>
+          <div>
+            <p class="loot">Any loot</p>
+          </div>
         </div>
-        <div>
-          <p class="heirloom">Heirloom x3</p>
+      </td>
+      <td>
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/immunization-philter.png" alt="Immunization Philter"
+            title="The philter provides protection for a thorough search!">
+          </div>
+          <div>
+            <p class="heirloom">Trinket/Gold+ x2 <br> Gold+ <br> Heirloom</p>
+          </div>
         </div>
-      </div>
 
-      <div class="item-interaction">
-        <div>
-          <img class="item" src="provision-images/shovel.png" alt="Shovel" title="Heirloom x2">
-          <img class="item" src="provision-images/dagger.png" alt="Small Dagger" title="Heirloom x2">
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/herbs.png" alt="Medicinal Herbs"
+            title="The herbs provide protection for a thorough search!">
+          </div>
+          <div>
+            <p class="heirloom">Trinket/Gold+ x2 <br> Heirloom</p>
+          </div>
         </div>
-        <div>
-          <p class="heirloom">Heirloom x2</p>
-        </div>
-      </div>
-    </td>
-    <td>
-      <div class="item-interaction">
-        <div>
-          <img class="item" src="provision-images/dram-antidote.png" alt="Dram of Antidote" title="Any loot x2,  Gold+">
-        </div>
-        <div>
-          <p class="loot">Any loot x2 <br> Gold++</p>
-        </div>
-      </div>
 
-      <div class="item-interaction">
-        <div>
-          <img class="item" src="provision-images/antivenom.png" alt="Antivenom" title="Any loot x2">
-          <img class="item" src="provision-images/bandage.png" alt="Bandage" title="Any loot x2">
-          <img class="item" src="provision-images/key.png" alt="Skeleton Key" title="Any loot x2">
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/caustic-solution.png" alt="Caustic Solution"
+            title="You take some of the wrappings and put them into the solution.">
+          </div>
+          <div>
+            <p class="loot">Draught of Man</p>
+          </div>
         </div>
-        <div>
-          <p class="loot">Any loot x2</p>
-        </div>
-      </div>
 
-      <div class="item-interaction">
-        <div>
-          <img class="item" src="provision-images/shovel.png" alt="Shovel" title="Any loot">
-          <img class="item" src="provision-images/dagger.png" alt="Small Dagger" title="Any loot">
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/dagger.png" alt="Small Dagger"
+            title="You carefully cut off some untainted wrappings.">
+          </div>
+          <div>
+            <p class="loot">Bandage</p>
+          </div>
         </div>
-        <div>
-          <p class="loot">Any loot</p>
+      </td>
+      <td>
+        <div class="item-interaction">
+          <p class="null">None</p>
         </div>
-      </div>
-    </td>
-    <td>
-      <div class="item-interaction">
-        <div>
-          <img class="item" src="provision-images/immunization-philter.png" alt="Immunization Philter" title="Trinket/Gold+ x2,  Gold+,  Heirloom">
+      </td>
+      <td>
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/caustic-solution.png" alt="Caustic Solution"
+            title="You squeeze some oil into the vial...">
+          </div>
+          <div>
+            <p class="loot">Ancestor's Luminous Concotion</p>
+          </div>
         </div>
-        <div>
-          <p class="heirloom">Trinket/Gold+ x2 <br> Gold+ <br> Heirloom</p>
-        </div>
-      </div>
 
-      <div class="item-interaction">
-        <div>
-          <img class="item" src="provision-images/herbs.png" alt="Medicinal Herbs" title="Trinket/Gold+ x2,  Heirloom">
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/torch.png" alt="Torch"
+            title="You manage to share wrappings between the two torches.">
+          </div>
+          <div>
+            <p class="loot">Torch x2</p>
+          </div>
         </div>
-        <div>
-          <p class="heirloom">Trinket/Gold+ x2 <br> Heirloom</p>
-        </div>
-      </div>
 
-      <div class="item-interaction">
-        <div>
-          <img class="item" src="provision-images/caustic-solution.png" alt="Caustic Solution" title="Draught of Man">
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/luminous-concoction.png" alt="Ancestor's Luminous Concoction"
+            title="Pouring the mysterious liquid over the old torch allows it to be reignited.">
+          </div>
+          <div>
+            <p class="loot">Torch</p>
+          </div>
         </div>
-        <div>
-          <p class="loot">Draught of Man</p>
+      </td>
+      <td>
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/eldritch-blood.png" alt="Vial of Eldritch Blood"
+            title="A terrifying figure emerges from the darkness!">
+          </div>
+          <div>
+            <p class="summon">Summon the Shambler</p>
+          </div>
         </div>
-      </div>
+      </td>
+      <td>
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/luminous-concoction.png" alt="Ancestor's Luminous Concoction"
+            title="Pouring the concoction onto the book reveals ancient writing.">
+          </div>
+          <div>
+            <p class="buff">75%: +5 ACC <br> &nbsp;&nbsp;&nbsp;&nbsp; +3% CRIT <br> 25%: +3 ACC <br>
+              &nbsp;&nbsp;&nbsp;&nbsp; +2% CRIT</p>
+          </div>
+        </div>
 
-      <div class="item-interaction">
-        <div>
-          <img class="item" src="provision-images/dagger.png" alt="Small Dagger" title="Bandage">
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/torch.png" alt="Torch"
+            title="The weakness of the enemy is written on the pages!">
+          </div>
+          <div>
+            <p class="buff">60%: +3 ACC <br> &nbsp;&nbsp;&nbsp;&nbsp; +5% CRIT <br> 40%: +5 ACC <br>
+              &nbsp;&nbsp;&nbsp;&nbsp; +3% CRIT</p>
+          </div>
         </div>
-        <div>
-          <p class="loot">Bandage</p>
-        </div>
-      </div>
-    </td>
-    <td>
-      <div class="item-interaction">
-        <p class="null">None</p>
-      </div>
-    </td>
-  </tr>
-</table>
 
-<br>
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/dagger.png" alt="Small Dagger"
+            title="You cut out some notable pages...">
+          </div>
+          <div>
+            <p class="loot">Journal Page/Short Poem x2</p>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="item-interaction">
+          <p class="null">None</p>
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
 
-<table>
-  <tr>
-    <th class="leftcol">Curio</th>
-    <th>Sconce</th>
-    <th>Shambler's Altar</th>
-    <th>Stack of Books</th>
-    <th>Unlocked Strongbox</th>
-  </tr>
 
-  <tr>
-    <th class="leftcol">Image</th>
-    <td class="curioimg"><img src="curio-images/sconce.png" alt="Sconce"></td>
-    <td class="curioimg"><img src="curio-images/shambler.png" alt="Shambler's Altar"></td>
-    <td class="curioimg"><img src="curio-images/books.png" alt="Stack of Books"></td>
-    <td class="curioimg"><img src="curio-images/unlocked-strongbox.png" alt="Unlocked Strongbox"></td>
-  </tr>
+<div id="ruins" class="table">
+  <table>
+    <tr>
+      <th class="leftcol">Curio</th>
+      <th>Alchemy Table</th>
+      <th>Bookshelf</th>
+      <th>Confession Booth</th>
+      <th>Decorative Urn</th>
+      <th>Fallen God Statue</th>
+      <th>Holy Fountain</th>
+      <th>Iron Maiden</th>
+      <th>Locked Display Cabinet</th>
+      <th>Locked Sarcophagus</th>
+      <th>Pile of Bones</th>
+      <th>Sarcophagus</th>
+      <th>Suit of Armor</th>
+    </tr>
 
-  <tr>
-    <th class="leftcol">Cleansing Without Items</th>
-    <td>
-      <p class="loot">75%: Torch</p>
-      <p class="nothing">25%: Nothing</p>
-    </td>
-    <td>
-      <p class="nothing">100%: Nothing</p>
-    </td>
-    <td>
-      <p class="negative">40%: Trap</p>
-      <p class="negative indent">50%: Stress +25</p>
-      <p class="negative indent">50%: Torchlight -25</p>
-      <p class="nothing">40%: Random Quirk</p>
-      <p class="positive indent">66%: Positive Quirk</p>
-      <p class="negative indent">33%: Negative Quirk</p>
-      <p class="nothing">20%: Nothing</p>
-    </td>
-    <td>
-      <p class="nothing">50%: Nothing</p>
-      <p class="negative">25%: Trap</p>
-      <p class="negative indent">50%: Blight (3 pts/4 rounds)</p>
-      <p class="negative indent">50%: Bleed (3 pts/4 rounds)</p>
-      <p class="loot">25%: Any loot x2</p>
-    </td>
-  </tr>
+    <tr>
+      <th class="leftcol">Image</th>
+      <td class="curioimg"><img src="curio-images/alchemy-table.png" alt="Alchemy Table"></td>
+      <td class="curioimg"><img src="curio-images/bookshelf.png" alt="Bookshelf"></td>
+      <td class="curioimg"><img src="curio-images/confession-booth.png" alt="Confession Booth"></td>
+      <td class="curioimg"><img src="curio-images/urn.png" alt="Decorative Urn"></td>
+      <td class="curioimg"><img src="curio-images/holy-altar.png" alt="Fallen God Statue"></td>
+      <td class="curioimg"><img src="curio-images/holy-fountain.png" alt="Holy Fountain"></td>
+      <td class="curioimg"><img src="curio-images/iron-maiden.png" alt="Iron Maiden"></td>
+      <td class="curioimg"><img src="curio-images/display-cabinet.png" alt="Locked Display Cabinet"></td>
+      <td class="curioimg"><img src="curio-images/locked-sarcophagus.png" alt="Locked Sarcophagus"></td>
+      <td class="curioimg"><img src="curio-images/bones.png" alt="Pile of Bones"></td>
+      <td class="curioimg"><img src="curio-images/sarcophagus.png" alt="Sarcophagus"></td>
+      <td class="curioimg"><img src="curio-images/armor.png" alt="Suit of Armor"></td>
+    </tr>
 
-  <tr>
-    <th class="leftcol">Cleansing With Items</th>
-    <td>
-      <div class="item-interaction">
-        <div>
-          <img class="item" src="provision-images/caustic-solution.png" alt="Caustic Solution" title="Ancestor's Luminous Concoction">
-        </div>
-        <div>
-          <p class="loot">Ancestor's Luminous Concotion</p>
-        </div>
-      </div>
+    <tr>
+      <th class="leftcol">Cleansing Without Items</th>
+      <td>
+        <p class="negative" title="You clumsily knock over a vile liquid.">60%: Blight (3 pts/4 rounds)</p>
+        <p class="nothing" title="The experiments do not yield any findings.">30%: Nothing</p>
+        <p class="loot" title="The table contains a mixture of some kind...">10%: Gold++ x2</p>
+      </td>
+      <td>
+        <p class="scouting" title="A map is found tucked into the volumes.">30%: Scouting</p>
+        <p class="scouting indent" title="A map is found tucked into the volumes.">
+          50%: Curios for 0 rooms</p>
+        <p class="scouting indent" title="A map is found tucked into the volumes.">
+          30%: Curios for 2 rooms</p>
+        <p class="scouting indent" title="A map is found tucked into the volumes.">
+          20%: All for 1 room</p>
+        <p class="nothing" title="The volumes are dull and uninteresting.">30%: Nothing</p>
+        <p class="negative" title="The passages are unsettling.">20%: Stress +15</p>
+        <p class="nothing" title="The knowledge within forever changes the hero.">20%: Random Quirk</p>
+        <p class="positive indent" title="The knowledge within forever changes the hero.">
+          66%: Positive Quirk</p>
+        <p class="negative indent" title="The knowledge within forever changes the hero.">
+          33%: Negative Quirk</p>
+      </td>
+      <td>
+        <p class="negative" title="The hero's history of sin is too much to bear.">60%: Stress +35</p>
+        <p class="loot" title="The booth contains hidden treasure...">30%: Gold/Trinket</p>
+        <p class="positive" title="The hero is absolved of a sin.">10%: Purge Negative Quirk</p>
+      </td>
+      <td>
+        <p class="negative" title="The hero contracts a deadly disease.">50%: Disease</p>
+        <p class="negative indent" title="The hero contracts a deadly disease.">66%: Creeping Cough</p>
+        <p class="negative indent" title="The hero contracts a deadly disease.">33%: Random</p>
+        <p class="loot" title="Sentimental gifts are hidden inside.">25%: Trinket/Gems <br>
+          &nbsp;&nbsp;&nbsp;&nbsp; Gold</p>
+        <p class="nothing" title="The urn has nothing but ashes inside.">25%: Nothing</p>
+      </td>
+      <td>
+        <p class="nothing" title="The gods contemplate your worthiness...">75%: Stat change</p>
+        <p class="negative indent" title="The gods contemplate your worthiness...">50%: -15% DMG</p>
+        <p class="buff indent" title="The gods contemplate your worthiness...">50%: +15% DMG</p>
+        <p class="nothing" title="The statue is eerie, but little more.">25%: Nothing</p>
+      </td>
+      <td>
+        <p class="positive" title="The water reinvigorates the hero.">50%: Stress -10 <br>
+          &nbsp;&nbsp;&nbsp;&nbsp; Heal 5 <br> &nbsp;&nbsp;&nbsp;&nbsp; Cure</p>
+        <p class="loot" title="Propitiations are found at the bottom of the fountain.">50%: Gold++ x2</p>
+      </td>
+      <td>
+        <p class="negative" title="The maiden swings shut on its own, trapping the hero!">
+          30%: Claustrophobia (Quirk)</p>
+        <p class="negative" title="The hero inhales foul vapours.">30%: Disease</p>
+        <p class="negative indent" title="The hero inhales foul vapours.">66%: Tetanus</p>
+        <p class="negative indent" title="The hero inhales foul vapours.">33%: Random</p>
+        <p class="negative" title="The maiden closes and inflicts a horrendous wound.">
+          20%: Bleed (5 pts/4 rounds)</p>
+        <p class="loot" title="Spoils of the tortured!">10%: Any loot x2</p>
+        <p class="nothing" title="The maiden squeaks open to reveal only foul smelling air.">10%: Nothing</p>
+      </td>
+      <td>
+        <p class="negative" title="The lock mechanism is trapped!">100%: Trap</p>
+        <p class="negative indent" title="The lock mechanism is trapped!">50%: Blight (3 pts/4 rounds)</p>
+        <p class="negative indent" title="The lock mechanism is trapped!">50%: Bleed (3 pts/4 rounds)</p>
+      </td>
+      <td>
+        <p class="negative" title="You trigger the trap!">100%: Blight (3 pts/4 rounds)</p>
+      </td>
+      <td>
+        <p class="negative" title="The hero becomes strangely fascinated with the remains...">
+          50%: Bloodthirtsy (Quirk)</p>
+        <p class="loot" title="Loot is buried beneath the rocks and bones.">30%: Any loot x2</p>
+        <p class="nothing" title="There is nothing of value in the remains.">10%: Nothing</p>
+      </td>
+      <td>
+        <p class="negative" title="The hero contemplates mortality...">50%: Thanatophobia (Quirk)</p>
+        <p class="loot" title="Hidden treasures!">30%: Gold++</p>
+        <p class="nothing" title="The sarcophagus is completely empty.">20%: Nothing</p>
+      </td>
+      <td>
+        <p class="buff" title="The armor protects the hero with a knightly aura.">75%: +10% PROT <br>
+          &nbsp;&nbsp;&nbsp;&nbsp; +5 DODGE</p>
+        <p class="positive" title="The suit reveals great insight into this world.">25%: Quirk</p>
+        <p class="positive indent" title="The suit reveals great insight into this world.">
+          50%: Ruins Adventurer</p>
+        <p class="positive indent" title="The suit reveals great insight into this world.">
+          50%: Ruins Tactician</p>
+      </td>
+    </tr>
 
-      <div class="item-interaction">
-        <div>
-          <img class="item" src="provision-images/torch.png" alt="Torch" title="Torch x2">
+    <tr>
+      <th class="leftcol">Cleansing With Items</th>
+      <td>
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/luminous-concoction.png" alt="Ancestor's Luminous Concoction"
+            title="The potion's liquid helps create a powerful blazing mixture!">
+            <img class="item same-effect" src="provision-images/torch.png" alt="Torch"
+            title="The torch oil helps create a powerful blazing mixture!">
+          </div>
+          <div>
+            <p class="positive">Torchlight +100</p>
+          </div>
         </div>
-        <div>
-          <p class="loot">Torch x2</p>
-        </div>
-      </div>
 
-      <div class="item-interaction">
-        <div>
-          <img class="item" src="provision-images/luminous-concoction.png" alt="Ancestor's Luminous Concoction" title="Torch">
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/tonic-resistance.png" alt="Tonic of Resistance"
+            title="The potion disinfects the station, allowing for successful research.">
+          </div>
+          <div>
+            <p class="loot">Random potion x2 <br> Gold+</p>
+          </div>
         </div>
-        <div>
-          <p class="loot">Torch</p>
-        </div>
-      </div>
-    </td>
-    <td>
-      <div class="item-interaction">
-        <div>
-          <img class="item" src="provision-images/eldritch-blood.png" alt="Vial of Eldritch Blood" title="Summon the Shambler">
-        </div>
-        <div>
-          <p class="summon">Summon the Shambler</p>
-        </div>
-      </div>
-    </td>
-    <td>
-      <div class="item-interaction">
-        <div>
-          <img class="item" src="provision-images/luminous-concoction.png" alt="Ancestor's Luminous Concoction">
-        </div>
-        <div>
-          <p class="buff">75%: +5 ACC <br> &nbsp;&nbsp;&nbsp;&nbsp; +3% CRIT <br> 25%: +3 ACC <br> &nbsp;&nbsp;&nbsp;&nbsp; +2% CRIT</p>
-        </div>
-      </div>
 
-      <div class="item-interaction">
-        <div>
-          <img class="item" src="provision-images/torch.png" alt="Torch">
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/herbs.png" alt="Medicinal Herbs"
+            title="The herbs disinfect the station, allowing for successful research.">
+          </div>
+          <div>
+            <p class="loot">Random potion x2</p>
+          </div>
         </div>
-        <div>
-          <p class="buff">60%: +3 ACC <br> &nbsp;&nbsp;&nbsp;&nbsp; +5% CRIT <br> 40%: +5 ACC <br> &nbsp;&nbsp;&nbsp;&nbsp; +3% CRIT</p>
-        </div>
-      </div>
 
-      <div class="item-interaction">
-        <div>
-          <img class="item" src="provision-images/dagger.png" alt="Small Dagger" title="Journal Page/Short Poem x2">
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/caustic-solution.png" alt="Caustic Solution"
+            title="You fill the vial with the unknown liquid in the flasks.">
+          </div>
+          <div>
+            <p class="loot">Random potion</p>
+          </div>
         </div>
-        <div>
-          <p class="loot">Journal Page/Short Poem x2</p>
+      </td>
+
+      <td>
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/luminous-concoction.png" alt="Ancestor's Luminous Concoction"
+            title="A short and peaceful poem helps to ease the hero.">
+            <img class="item same-effect" src="provision-images/torch.png" alt="Torch"
+            title="A short and peaceful poem helps to ease the hero.">
+          </div>
+          <div>
+            <p class="positive">Stress -10</p>
+          </div>
         </div>
-      </div>
-    </td>
-    <td>
-      <div class="item-interaction">
-        <p class="null">None</p>
-      </div>
-    </td>
-  </tr>
-</table>
+
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/dagger.png" alt="Small Dagger"
+            title="You rummage through the books...">
+          </div>
+          <div>
+            <p class="loot">Journal Page/Short Poem x2</p>
+          </div>
+        </div>
+      </td>
+
+      <td>
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/draught-heroism.png" alt="Draught of Heroism"
+            title="The gods are pleased with your devotion.">
+          </div>
+          <div>
+            <p class="positive">Purge Negative Quirk</p>
+          </div>
+        </div>
+        
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/holy-water.png" alt="Holy Water"
+            title="The ritual relieves the hero.">
+            <img class="item same-effect" src="provision-images/remedy-resolve.png" alt="Remedy of Resolve"
+            title="The ritual relieves the hero.">
+          </div>
+          <div>
+            <p class="positive">Stress -20</p>
+          </div>
+        </div>
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/caustic-solution.png" alt="Caustic Solution"
+            title="You attempt to have the water blessed...">
+          </div>
+          <div>
+            <p class="loot">Holy Water</p>
+          </div>
+        </div>
+      </td>
+
+      <td>
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/remedy-resolve.png" alt="Remedy of Resolve"
+            title="The remedy cleanses the ashes. Valuables remain!">
+          </div>
+          <div>
+            <p class="loot">Gold x2 <br> Trinket/Gems <br> Gold+</p>
+          </div>
+        </div>
+        
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/holy-water.png" alt="Holy Water"
+            title="The consecrated water dissolves the ashes. Valuables remain!">
+          </div>
+          <div>
+            <p class="loot">Gold x2 <br> Trinket/Gems</p>
+          </div>
+        </div>
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/caustic-solution.png" alt="Caustic Solution"
+            title="You scoop some of the ashen remains into the flask...">
+          </div>
+          <div>
+            <p class="loot">Masking Paste</p>
+          </div>
+        </div>
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/shovel.png" alt="Shovel"
+            title="What sort of person defiles the dead?">
+          </div>
+          <div>
+            <p class="negative">Guilty Conscience (Quirk)</p>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/holy-water.png" alt="Holy Water"
+            title="You have curried favor from the gods!">
+            <img class="item same-effect" src="provision-images/remedy-resolve.png" alt="Remedy of Resolve"
+            title="The potion pleases the gods!">
+          </div>
+          <div>
+            <p class="buff">+30% DMG</p>
+          </div>
+        </div>
+
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/shovel.png" alt="Shovel"
+            title="The gods ponder the deeds of your past...">
+          </div>
+          <div>
+            <p> <span class="buff">50%: +10% Stress received</span> <br>
+              <span class="negative">50%: -10% Stress received</span></p>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/holy-water.png" alt="Holy Water"
+            title="Divine benefit!">
+            <img class="item same-effect" src="provision-images/remedy-resolve.png" alt="Remedy of Resolve"
+            title="Divine benefit!">
+          </div>
+          <div>
+            <p class="positive">Stress -20 <br> Heal 12 <br> Cure</p>
+          </div>
+        </div>
+
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/caustic-solution.png" alt="Caustic Solution"
+            title="You scoop up the devout liquid into the vial.">
+          </div>
+          <div>
+            <p class="loot">Remedy of Resolve</p>
+          </div>
+        </div>
+        
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/dagger.png" alt="Small Dagger"
+            title="The hero blasphemes the holy liquid with their blood.">
+          </div>
+          <div>
+            <p class="summon">Summon the Prophet</p>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/draught-unholy.png" alt="Draught of Unholy"
+            title="The draught's effect on the skeleton protects you.">
+          </div>
+          <div>
+            <p class="loot">Any loot x2 <br> Gold+</p>
+          </div>
+        </div>
+
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/herbs.png" alt="Medicinal Herbs"
+            title="The herbs enliven the skeleton inside!">
+            <img class="item same-effect" src="provision-images/tonic-resistance.png" alt="Tonic of Resistance"
+            title="The tonic enlivens the skeleton inside!">
+          </div>
+          <div>
+            <p class="summon">50%: Summon the Bone Rabble <br>
+              33%: Summon the Bone Soldier <br>
+              17%: Summon the Bone Captain</p>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/key.png" alt="Skeleton Key"
+            title="Treasures are stashed in the cabinet!">
+          </div>
+          <div>
+            <p class="loot">Gold++ x2 <br> Trinket x2</p>
+          </div>
+        </div>
+
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/shovel.png" alt="Shovel"
+            title="Smashed the cabinet open!">
+          </div>
+          <div>
+            <p class="loot">Gold++ x2 <br> Trinket</p>
+          </div>
+        </div>
+
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/dagger.png" alt="Small Dagger"
+            title="The cabinet's lock may yet be pervious.">
+          </div>
+          <div>
+            <p class="loot">Gold++ x2</p>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/key.png" alt="Skeleton Key"
+            title="The silent approach was the smart one...">
+          </div>
+          <div>
+            <p class="heirloom">Gold/Heirloom x2 <br> Gold/Trinket</p>
+          </div>
+        </div>
+
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/dagger.png" alt="Small Dagger"
+            title="The dead have no need for gold...">
+          </div>
+          <div>
+            <p class="heirloom">Gold/Heirloom x2</p>
+          </div>
+        </div>
+
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/shovel.png" alt="Shovel"
+            title="You disturb the dead, and the dead disturb you...">
+          </div>
+          <div>
+            <p class="summon">50%: Summon the Bone Rabble <br>
+              33%: Summon the Bone Soldier <br>
+              17%: Summon the Bone Captain</p>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/caustic-solution.png" alt="Caustic Solution"
+            title="The bones tremble, and the liquid bubbles...">
+          </div>
+          <div>
+            <p class="loot">Draught of Unholy</p>
+          </div>
+        </div>
+        
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/holy-water.png" alt="Holy Water"
+            title="Consecrating the remains was probably not the best idea...">
+            <img class="item same-effect" src="provision-images/remedy-resolve.png" alt="Remedy of Resolve"
+            title="Consecrating the remains was probably not the best idea...">
+          </div>
+          <div>
+            <p class="summon">Summon the Necromancer</p>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/remedy-resolve.png" alt="Remedy of Resolve"
+            title="The potion removes an ancient curse...">
+          </div>
+          <div>
+            <p class="loot">Gold++ x2 <br> Gold+</p>
+          </div>
+        </div>
+
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/holy-water.png" alt="Holy Water"
+            title="The Holy Water removes an ancient curse...">
+          </div>
+          <div>
+            <p class="loot">Gold++ x2</p>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/provoked-protection.png" alt="Provoked Protection"
+            title="You cover the suit in the liquid, further protecting it.">
+          </div>
+          <div>
+            <p class="buff">+15% PROT <br> +10 DODGE</p>
+          </div>
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div id="warrens" class="table">
+  <table>
+    <tr>
+      <th class="leftcol">Curio</th>
+      <th>Bone Altar</th>
+      <th>Dinner Cart</th>
+      <th>Makeshift Dining Table</th>
+      <th>Moonshine Barrel</th>
+      <th>Occult Scrawlings</th>
+      <th>Pile of Scrolls</th>
+      <th>Rack of Blades</th>
+      <th>Sacrificial Stone</th>
+    </tr>
+
+    <tr>
+      <th class="leftcol">Image</th>
+      <td class="curioimg"><img src="curio-images/skull-altar.png" alt="Alchemy Table"></td>
+      <td class="curioimg"><img src="curio-images/dinner-cart.png" alt="Dinner Cart"></td>
+      <td class="curioimg"><img src="curio-images/dining-table.png" alt="Makeshift Dining Table"></td>
+      <td class="curioimg"><img src="curio-images/moonshine.png" alt="Moonshine Barrel"></td>
+      <td class="curioimg"><img src="curio-images/scrawlings.png" alt="Occult Scrawlings"></td>
+      <td class="curioimg"><img src="curio-images/scrolls.png" alt="Pile of Scrolls"></td>
+      <td class="curioimg"><img src="curio-images/knife-rack.png" alt="Rack of Blades"></td>
+      <td class="curioimg"><img src="curio-images/sacrificial-stone.png" alt="Sacrificial Stone"></td>
+    </tr>
+
+    <tr>
+      <th class="leftcol">Cleansing Without Items</th>
+      <td>
+        <p class="negative" title="The altar ponders the worth of the hero...">50%: +15% Stress received <br>
+          &nbsp;&nbsp;&nbsp;&nbsp; -10% PROT <br> &nbsp;&nbsp;&nbsp;&nbsp; -5% DMG</p>
+        <p class="buff" title="The altar ponders the worth of the hero...">25% -10% Stress received <br>
+          &nbsp;&nbsp;&nbsp;&nbsp; +5 DODGE</p>
+        <p class="buff" title="The altar ponders the worth of the hero...">25%: +15% DMG <br>
+          &nbsp;&nbsp;&nbsp;&nbsp; +10 ACC <br> &nbsp;&nbsp;&nbsp;&nbsp; +5% CRIT</p>
+      </td>
+      <td>
+        <p class="negative" title="The swine are not cleanly folk...">50%: Disease</p>
+        <p class="negative indent" title="The swine are not cleanly folk...">50%: The Black Plague</p>
+        <p class="negative indent" title="The swine are not cleanly folk...">50%: Random</p>
+        <p class="loot" title="Some of this meat looks edible...">25%: Food</p>
+        <p class="nothing" title="Nothing but rotting bodies.">25%: Nothing</p>
+      </td>
+      <td>
+        <p class="negative" title="The meat is not fully cooked...">40%: Tapeworm (Disease)</p>
+        <p class="loot" title="The table contains leftovers from a previous dinner.">30%: Food, Gold-</p>
+        <p class="nothing" title="Everything has been eaten already.">30%: Nothing</p>
+      </td>
+      <td>
+        <p class="negative" title="The moonshine is kicked-off, making the hero violently ill.">
+          30%: Blight (3 pts/4 rounds)</p>
+        <p class="negative" title="The hero acquires a taste for this magnificent sauce...">
+          30%: Tippler (Quirk)</p>
+        <p class="loot" title="The barrel contains stashed treasures.">20%: Gold/Supplies</p>
+        <p class="nothing" title="The barrel is completely empty.">20%: Nothing</p>
+      </td>
+      <td>
+        <p class="nothing" title="The scrawlings forever change the hero.">50%: Random Quirk</p>
+        <p class="negative indent" title="The scrawlings forever change the hero.">50%: Negative Quirk</p>
+        <p class="positive indent" title="The scrawlings forever change the hero.">50%: Positive Quirk</p>
+        <p class="nothing" title="The scrawlings are dull and uninteresting.">20%: Nothing</p>
+        <p class="negative" title="This sight is too much for the hero to bear.">15%: -15 ACC <br>
+          &nbsp;&nbsp;&nbsp;&nbsp; -15 DODGE <br> &nbsp;&nbsp;&nbsp;&nbsp; Marked (0 rounds)</p>
+        <p class="negative" title="This sight is too much for the hero to bear.">15%: Stress +20</p>
+      </td>
+      <td>
+        <p class="nothing" title="The scrolls forever change the hero.">30%: Random Quirk</p>
+        <p class="negative indent" title="The scrolls forever change the hero.">66%: Negative Quirk</p>
+        <p class="positive indent" title="The scrolls forever change the hero.">33%: Positive Quirk</p>
+        <p class="scouting" title="The scrolls are a well-rendered map of the road ahead...">
+          30%: Scouting</p>
+        <p class="scouting indent" title="The scrolls are a well-rendered map of the road ahead...">
+          40%: Hallway battles for 2 rooms</p>
+        <p class="scouting indent" title="The scrolls are a well-rendered map of the road ahead...">
+          40%: Room battles for 2 rooms</p>
+        <p class="scouting indent" title="The scrolls are a well-rendered map of the road ahead...">
+          20%: All for 1 room</p>
+        <p class="negative" title="The scrolls contain hideous portents.">20%: Stress +50</p>
+        <p class="nothing" title="The scrolls are merely records of dull transactions...">20%: Nothing</p>
+      </td>
+      <td>
+        <p class="loot" title="A smaller blade found on the rack may be useful...">50%: Small Dagger</p>
+        <p class="negative" title="The hero receives a nasty gash.">40%: Bleed (3 pts/4 rounds)</p>
+        <p class="nothing" title="Nothing useful here.">10%: Nothing</p>
+      </td>
+      <td>
+        <p class="negative" title="The hero is deeply disturbed.">50%: Stress +35</p>
+        <p class="positive" title="A sinful behaviour is vanquished.">25%: Purge Negative Quirk</p>
+        <p class="positive" title="The stone's carvings give great insight into these Warrens...">
+          25%: Quirk</p>
+        <p class="positive indent" title="The stone's carvings give great insight into these Warrens...">
+          25%: Warrens Explorer</p>
+        <p class="positive indent" title="The stone's carvings give great insight into these Warrens...">
+          25%: Warrens Scrounger</p>
+      </td>
+    </tr>
+
+    <tr>
+      <th class="leftcol">Cleansing With Items</th>
+      <td>
+        <div class="item-interaction">
+          <p class="null">None</p>
+        </div>
+      </td>
+
+      <td>
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/immunization-philter.png" alt="Immunization Philter"
+            title="The philter cleanses the meat, making some of it edible.">
+            <img class="item same-effect" src="provision-images/tonic-resistance.png" alt="Tonic of Resistance"
+            title="The tonic cleanses the meat, making some of it edible.">
+          </div>
+          <div>
+            <p class="loot">Food <br> Gold/Trinket <br> Gold+</p>
+          </div>
+        </div>
+
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/herbs.png" alt="Medicinal Herbs"
+            title="The herbs cleanse the meat, making some of it edible.">
+          </div>
+          <div>
+            <p class="loot">Food <br> Gold/Trinket</p>
+          </div>
+        </div>
+
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/caustic-solution.png" alt="Caustic Solution"
+            title="You gather up some of the dripping blood.">
+          </div>
+          <div>
+            <p class="loot">Vial of Unknown Blood</p>
+          </div>
+        </div>
+      </td>
+
+      <td>
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/immunization-philter.png" alt="Immunization Philter"
+            title="The philter kills any diseases harbored in the food.">
+            <img class="item same-effect" src="provision-images/tonic-resistance.png" alt="Tonic of Resistance"
+            title="The tonic kills any diseases harbored in the food.">
+          </div>
+          <div>
+            <p class="loot">Food x2 <br> Gold <br> Gold+</p>
+          </div>
+        </div>
+
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/herbs.png" alt="Medicinal Herbs"
+            title="The herbs kill any diseases harbored in the food.">
+          </div>
+          <div>
+            <p class="loot">Food x2 <br> Gold</p>
+          </div>
+        </div>
+      </td>
+
+      <td>
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/herbs.png" alt="Medicinal Herbs"
+            title="This is more than just your average homebrewed booze...">
+            <img class="item same-effect" src="provision-images/tonic-resistance.png" alt="Tonic of Resistance"
+            title="This is more than just your average homebrewed booze...">
+          </div>
+          <div>
+            <p class="buff">+35% Disease Resist (party) <br> -5 ACC (party)</p>
+          </div>
+        </div>
+        
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/caustic-solution.png" alt="Caustic Solution"
+            title="Time to take a sample...">
+          </div>
+          <div>
+            <p class="loot">Ancestor's Rotgut/Berserking Brew/Vigorous Concoction</p>
+          </div>
+        </div>
+        
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/anticoagulant-aromatic.png" alt="Anticoagulant Aromatic"
+            title="You decide to dip the aromatic into the liquid...">
+          </div>
+          <div>
+            <p class="loot">Nullifying Brew</p>
+          </div>
+        </div>
+        
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/noxious-aromatic.png" alt="Noxious Blood Aromatic"
+            title="You decide to dip the aromatic into the liquid...">
+          </div>
+          <div>
+            <p class="loot">Antivenom</p>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/caustic-solution.png" alt="Caustic Solution"
+            title="The scrawlings glow a violent red...">
+          </div>
+          <div>
+            <p class="loot">Draught of Beast</p>
+          </div>
+        </div>
+
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/herbs.png" alt="Medicinal Herbs"
+            title="Placing the herbs at the base lights up the symbols...">
+            <img class="item same-effect" src="provision-images/tonic-resistance.png" alt="Tonic of Resistance"
+            title="Pouring the tonic over the scrawlings lights up the symbols...">
+          </div>
+          <div>
+            <p> <span class="summon">Summon the Swine Prince</p>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/luminous-concoction.png" alt="Ancestor's Luminous Concoction"
+            title="Illuminating the evil scrolls with the concoction is mystifying...">
+            <img class="item same-effect" src="provision-images/torch.png" alt="Torch"
+            title="Burning the evil scrolls is a weight off of the hero...">
+          </div>
+          <div>
+            <p class="positive">Purge Negative Quirk</p>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/dagger.png" alt="Small Dagger"
+            title="You add the knife to the rack...">
+          </div>
+          <div>
+            <p class="positive">Stress -10</p>
+          </div>
+        </div>
+
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/caustic-solution.png" alt="Caustic Solution"
+            title="You gather up the dripping blood into the vial.">
+          </div>
+          <div>
+            <p class="loot">Vial of Unknown Blood</p>
+          </div>
+        </div>
+        
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/bandage.png" alt="Bandage"
+            title="The bandage protects the hero's hands during the search.">
+          </div>
+          <div>
+            <p class="loot">Supplies</p>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/draught-beast.png" alt="Draught of Beast"
+            title="The swine gods appease you...for now.">
+          </div>
+          <div>
+            <p class="positive">Purge Negative Quirk</p>
+          </div>
+        </div>
+
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/dagger.png" alt="Small Dagger"
+            title="A willing sacrifice is never questioned down here...">
+          </div>
+          <div>
+            <p class="summon">Summon the Flesh</p>
+          </div>
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div id="weald" class="table">
+  <table>
+    <tr>
+      <th class="leftcol">Curio</th>
+      <th>Ancient Coffin</th>
+      <th>Beast Carcass</th>
+      <th>Eerie Spiderweb</th>
+      <th>Left Luggage</th>
+      <th>Old Tree</th>
+      <th>Pristine Fountain</th>
+      <th>Shallow Grave</th>
+      <th>Traveller's Tent</th>
+      <th>Troubling Effigy</th>
+    </tr>
+
+    <tr>
+      <th class="leftcol">Image</th>
+      <td class="curioimg"><img src="curio-images/coffin.png" alt="Ancient Coffin"></td>
+      <td class="curioimg"><img src="curio-images/carcass.png" alt="Beast Carcass"></td>
+      <td class="curioimg"><img src="curio-images/web.png" alt="Eerie Spiderweb"></td>
+      <td class="curioimg"><img src="curio-images/luggage.png" alt="Left Luggage"></td>
+      <td class="curioimg"><img src="curio-images/tree.png" alt="Old Tree"></td>
+      <td class="curioimg"><img src="curio-images/weald-fountain.png" alt="Pristine Fountain"></td>
+      <td class="curioimg"><img src="curio-images/grave.png" alt="Shallow Grave"></td>
+      <td class="curioimg"><img src="curio-images/tent.png" alt="Traveller's Tent"></td>
+      <td class="curioimg"><img src="curio-images/effigy.png" alt="Troubling Effigy"></td>
+    </tr>
+
+    <tr>
+      <th class="leftcol">Cleansing Without Items</th>
+      <td>
+        <p class="negative" title="This body is fresh!">25%: +20 Stress
+        <p class="positive" title="Findings in the coffin give the hero insight into the nature of this world.">
+          25%: Quirk</p>
+        <p class="positive indent" title="Findings in the coffin give the hero insight into the nature of this world.">
+          25%: Weald Adventurer</p>
+        <p class="positive indent" title="Findings in the coffin give the hero insight into the nature of this world.">
+          25%: Weald Explorer</p>
+        <p class="loot" title="The coffin contains hidden treasures.">25%: Gold/Trinket x2</p>
+        <p class="nothing" title="There is nothing of value inside.">25%: Nothing</p>
+      </td>
+      <td>
+        <p class="negative" title="Exploring the carcass was not without risk of disease...">60%: Disease</p>
+        <p class="negative indent" title="Exploring the carcass was not without risk of disease...">
+          66%: Wasting Sickness</p>
+        <p class="negative indent" title="Exploring the carcass was not without risk of disease...">33%: Random</p>
+        <p class="negative" title="The hero is distraught by the sight of the carcass.">20%: Zoophobia (Quirk)</p>
+        <p class="loot" title="There is still some meat on these bones.">10%: Food</p>
+        <p class="nothing" title="The beast has nothing left to offer.">10%: Nothing</p>
+      </td>
+      <td>
+        <p class="negative" title="The hero suffers a strange bite.">40%: Quirk</p>
+        <p class="negative indent" title="The hero suffers a strange bite.">50%: Anemia</p>
+        <p class="negative indent" title="The hero suffers a strange bite.">50%: Hemophilia</p>
+        <p class="loot" title="Treasures are hidden behind the web!">30%: Gold/Trinket</p>
+        <p class="nothing" title="There is nothing of interest.">30%: Nothing</p>
+      </td>
+      <td>
+        <p class="negative" title="The owner was smart enough to trap it!">
+          100%: Blight (3 pts/4 rounds)</p>
+      </td>
+      <td>
+        <p class="heirloom" title="Someone couldn't resist stashing treasures here...">70%: Gold/Trinket <br>
+          &nbsp;&nbsp;&nbsp;&nbsp; Gold++ <br>  &nbsp;&nbsp;&nbsp;&nbsp; Heirloom</p>
+        <p class="negative" title="The hero is covered in a sticky goo.">15%: Quirk</p>
+        <p class="negative indent" title="The hero is covered in a sticky goo.">50%: Slowdraw</p>
+        <p class="negative indent" title="The hero is covered in a sticky goo.">50%: Slow Reflexes</p>
+        <p class="nothing" title="Sometimes a tree is just a tree.">15%: Nothing</p>
+      </td>
+      <td>
+        <p class="positive" title="The fountain reinvigorates the hero.">75%: Stress -15  <br>
+          &nbsp;&nbsp;&nbsp;&nbsp; Heal 5 <br> &nbsp;&nbsp;&nbsp;&nbsp; Cure</p>
+        <p class="nothing" title="Any power this fountain once had is now lost.">25%: Nothing</p>
+      </td>
+      <td>
+        <p class="loot" title="Gold and baubles serve no use to the dead...">50%: Gold/Trinket <br>
+          &nbsp;&nbsp;&nbsp;&nbsp; Gold++</p>
+        <p class="negative" title="An hour or so passes, and you find naught but a skeleton.">
+          25%: Torchlight -50</p>
+        <p class="negative" title="The deceased died of unnatural causes...">25%: Random Disease</p>
+      </td>
+      <td>
+        <p class="negative" title="The fate of the tent's occupant is revealed...">30%: Stress +20</p>
+        <p class="scouting" title="A map of the area is found inside the tent.">30%: Scouting</p>
+        <p class="scouting indent" title="A map of the area is found inside the tent.">
+          40%: Obstacles for 2 rooms</p>
+        <p class="scouting indent" title="A map of the area is found inside the tent.">40%: Traps for 2 rooms</p>
+        <p class="scouting indent" title="A map of the area is found inside the tent.">20%: All for 2 rooms</p>
+        <p class="loot" title="Someone left valuables inside the tent.">20%: Food/Potion/Supplies x2 <br>
+          &nbsp;&nbsp;&nbsp;&nbsp; Gold++ x2</p>
+        <p class="nothing" title="Nothing is left inside the tent.">20%: Nothing</p>
+      </td>
+      <td>
+        <p class="negative" title="The effigy lashes out, rejecting the hero!">50%: Stress +35</p>
+        <p class="nothing" title="The effigy imbues the hero with energy...">40%: Random Quirk</p>
+        <p class="negative indent" title="The effigy imbues the hero with energy...">50%: Negative Quirk</p>
+        <p class="positive indent" title="The effigy imbues the hero with energy...">50%: Positive Quirk</p>
+        <p class="nothing" title="Any power the effigy once had is now lost.">10%: Nothing</p>
+      </td>
+    </tr>
+
+    <tr>
+      <th class="leftcol">Cleansing With Items</th>
+      <td>
+        <div class="item-interaction">
+          <p class="null">None</p>
+        </div>
+      </td>
+
+      <td>
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/immunization-philter.png" alt="Immunization Philter"
+            title="The philter rids the carcass of any diseases.">
+            <img class="item same-effect" src="provision-images/tonic-resistance.png" alt="Tonic of Resistance"
+            title="The tonic rids the carcass of any diseases.">
+          </div>
+          <div>
+            <p class="loot">Food x2</p>
+          </div>
+        </div>
+
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/herbs.png" alt="Medicinal Herbs"
+            title="The medicinal herbs rid the carcass of any diseases.">
+          </div>
+          <div>
+            <p class="loot">Food</p>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/dram-antidote.png" alt="Dram of Antidote"
+            title="The venom has no effect after swallowing the potion.">
+          </div>
+          <div>
+            <p class="loot">Gold/Trinket x2 <br> Gold++</p>
+          </div>
+        </div>
+
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/antivenom.png" alt="Antivenom"
+            title="The venom has no effect after swallowing the antivenom.">
+          </div>
+          <div>
+            <p class="loot">Gold/Trinket x2</p>
+          </div>
+        </div>
+
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/dagger.png" alt="Small Dagger"
+            title="You cut through the webs with ease!">
+          </div>
+          <div>
+            <p class="loot">Gold/Trinket</p>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/dram-antidote.png" alt="Dram of Antidote"
+            title="You came well prepared for the trap-laden luggage!">
+          </div>
+          <div>
+            <p class="heirloom">Any loot x2 <br> Gold+ <br> Heirloom</p>
+          </div>
+        </div>
+
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/antivenom.png" alt="Antivenom"
+            title="The antivenom neutralizes a poison trap. Unspoiled treasures inside!">
+            <img class="item same-effect" src="provision-images/key.png" alt="Skeleton Key"
+            title="The key works. Valuable belongings inside!">
+          </div>
+          <div>
+            <p> <span class="heirloom">Any loot x2 <br> Heirloom</p>
+          </div>
+        </div>
+        
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/dagger.png" alt="Small Dagger"
+            title="An old but sturdy lock...">
+          </div>
+          <div>
+            <p> <span class="heirloom">Any loot <br> Heirloom</p>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/dagger.png" alt="Small Dagger"
+            title="You scour the knots for loot...">
+          </div>
+          <div>
+            <p> <span class="heirloom">Gold++ <br> Heirloom</p>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/holy-water.png" alt="Holy Water"
+            title="The hero consecrates the fountain...">
+            <img class="item same-effect" src="provision-images/remedy-resolve.png" alt="Remedy of Resolve"
+            title="The hero pours the potion into the fountain...">
+          </div>
+          <div>
+            <p class="positive">Stress -30 <br> Heal 8 <br> Cure</p>
+          </div>
+        </div>
+        
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/caustic-solution.png" alt="Caustic Solution"
+            title="The water is pure, and you decide to take some.">
+          </div>
+          <div>
+            <p class="loot">Filtered Health Potion</p>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/shovel.png" alt="Shovel"
+            title="This is what you get for digging up the dead.">
+          </div>
+          <div>
+            <p class="summon">50%: Summon the Bone Rabble <br>
+              33%: Summon the Bone Soldier <br>
+              17%: Summon the Bone Captain</p>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/torch.png" alt="Torch"
+            title="The tent goes up in flames, signaling your position in the dense thicket!">
+          </div>
+          <div>
+            <p class="summon">Summon the Brigand Pounder</p>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/holy-water.png" alt="Holy Water"
+            title="The holy water has a powerful effect!">
+            <img class="item same-effect" src="provision-images/remedy-resolve.png" alt="Remedy of Resolve"
+            title="The potion has a powerful effect!">
+          </div>
+          <div>
+            <p class="positive">Random Positive Quirk</p>
+          </div>
+        </div>
+
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/shovel.png" alt="Shovel"
+            title="You destroy the effigy...and now you'll pay the price.">
+          </div>
+          <div>
+            <p class="summon">Summon the Hag</p>
+          </div>
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div id="cove" class="table">
+  <table>
+    <tr>
+      <th class="leftcol">Curio</th>
+      <th>Barnacle Crusted Chest</th>
+      <th>Bas-Relief</th>
+      <th>Brackish Tidepool</th>
+      <th>Eerie Coral</th>
+      <th>Fish Carcass</th>
+      <th>Fish Idol</th>
+      <th>Giant Oyster</th>
+      <th>Ship's Figurehead</th>
+    </tr>
+
+    <tr>
+      <th class="leftcol">Image</th>
+      <td class="curioimg"><img src="curio-images/barnacle-chest.png" alt="Barnacle Crusted Chest"></td>
+      <td class="curioimg"><img src="curio-images/bas-relief.png" alt="Bas-Relief"></td>
+      <td class="curioimg"><img src="curio-images/tidepool.png" alt="Brackish Tidepool"></td>
+      <td class="curioimg"><img src="curio-images/coral.png" alt="Eerie Coral"></td>
+      <td class="curioimg"><img src="curio-images/fish.png" alt="Fish Carcass"></td>
+      <td class="curioimg"><img src="curio-images/fish-idol.png" alt="Fish Idol"></td>
+      <td class="curioimg"><img src="curio-images/oyster.png" alt="Giant Oyster"></td>
+      <td class="curioimg"><img src="curio-images/figurehead.png" alt="Ship's Figurehead"></td>
+    </tr>
+
+    <tr>
+      <th class="leftcol">Cleansing Without Items</th>
+      <td>
+        <p class="negative" title="The hero receives a nasty gash.">50%: Bleed (3 pts/4 rounds)
+        <p class="loot" title="There's still booty inside!">25%: Any loot</p>
+        <p class="nothing" title="Nothing inside but more barnacles.">25%: Nothing</p>
+      </td>
+      <td>
+        <p class="nothing" title="The message has a lasting impact on the hero...">100%: Random Quirk</p>
+        <p class="negative indent" title="The message has a lasting impact on the hero...">
+          66%: Negative Quirk</p>
+        <p class="positive indent" title="The message has a lasting impact on the hero...">
+          33%: Positive Quirk</p>
+      </td>
+      <td>
+        <p class="buff" title="The hero's resilience is heightened!">75%: +33% Bleed Resist <br>
+          &nbsp;&nbsp;&nbsp;&nbsp; +33% Blight Resist <br> &nbsp;&nbsp;&nbsp;&nbsp; +33% Debuff Resist <br>
+          &nbsp;&nbsp;&nbsp;&nbsp; +33% Disease Resist</p>
+        <p class="negative" title="The water is contaminated...">25%: Random Disease</p>
+      </td>
+      <td>
+        <p class="positive" title="This coral is soothing to the mind.">50%: Stress -10</p>
+        <p class="negative" title="The coral is abrasive and unnerving.">25%: Stress +25</p>
+        <p class="nothing" title="Nothing here after all.">25%: Nothing</p>
+      </td>
+      <td>
+        <p class="negative" title="The creature is harbouring a dangerous infection.">
+          25%: The Red Plague (Disease)</p>
+        <p class="negative" title="The carcass is covered in a vile liquid!">25%: Blight (3 pts/4 rounds)</p>
+        <p class="loot" title="The fish ate more than its fair share.">25%: Any loot <br>
+          &nbsp;&nbsp;&nbsp;&nbsp; Gold/Trinket</p>
+        <p class="nothing" title="Only digested fish inside.">25%: Nothing</p>
+      </td>
+      <td>
+        <p class="buff" title="A mystical force engulfs the hero!">50%: +10% DMG</p>
+        <p class="negative" title="A mystical force engulfs the hero!">25%: -25% DMG <br>
+          &nbsp;&nbsp;&nbsp;&nbsp; -10 ACC</p>
+        <p class="negative" title="A mystical force engulfs the hero!">25%: -12 DODGE</p>
+      </td>
+      <td>
+        <p class="negative" title="The oyster slams shut!">50%: Bleed (5 pts/4 rounds)</p>
+        <p class="loot" title="There are treasures hidden inside!">30%: Gold/Trinket <br>
+          &nbsp;&nbsp;&nbsp;&nbsp; Gold++</p>
+        <p class="nothing" title="Someone has already cleaned house.">20%: Nothing</p>
+      </td>
+      <td>
+        <p class="positive" title="The great artifact inspires the hero!">66%: Stress -30</p>
+        <p class="buff" title="The great artifact inspires the hero!">33%: +20% DMG <br>
+          &nbsp;&nbsp;&nbsp;&nbsp; +4 SPD</p>
+      </td>
+    </tr>
+
+    <tr>
+      <th class="leftcol">Cleansing With Items</th>
+      <td>
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/shovel.png" alt="Shovel"
+            title="The shovel makes easy work of the barnacles.">
+            <img class="item same-effect" src="provision-images/dagger.png" alt="Small Dagger"
+            title="You carefully pry the barnacles off...">
+          </div>
+          <div>
+            <p class="loot">Any loot x2</p>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="item-interaction">
+          <p class="null">None</p>
+        </div>
+      </td>
+      <td>
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/antivenom.png" alt="Antivenom"
+            title="The water is purified and cleanses the hero.">
+            <img class="item same-effect" src="provision-images/dram-antidote.png" alt="Dram of Antidote"
+            title="The bacteria is killed and the hero drinks the liquid...">
+          </div>
+          <div>
+            <p class="positive">50%: Stress -20 <br> 50%: Heal 8, Cure</p>
+          </div>
+        </div>
+        
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/caustic-solution.png" alt="Caustic Solution"
+            title="The hero decides to save the liquid for later...">
+          </div>
+          <div>
+            <p class="loot">Eyesight Elixir/Nullifying Brew/Tonic of Resistance</p>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/herbs.png" alt="Medicinal Herbs"
+            title="Cleansing the coral brings out its profound healing qualities.">
+            <img class="item same-effect" src="provision-images/tonic-resistance.png" alt="Tonic of Resistance"
+            title="The tonic reacts with the coral and cleanses it of any trouble.">
+          </div>
+          <div>
+            <p> <span class="positive">Purge Negative Quirk</p>
+          </div>
+        </div>
+        
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/caustic-solution.png" alt="Caustic Solution"
+            title="You recognize a type of coral that may be of use...">
+          </div>
+          <div>
+            <p> <span class="loot">Masking Paste</p>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/tonic-resistance.png" alt="Tonic of Resistance"
+            title="The gut is cleansed, allowing a safe search of its contents.">
+          </div>
+          <div>
+            <p> <span class="loot">Any loot x2 <br> Gold/Trinket <br> Gold+</p>
+          </div>
+        </div>
+
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/herbs.png" alt="Medicinal Herbs"
+            title="The gut is cleansed, allowing a safe search of its contents.">
+          </div>
+          <div>
+            <p> <span class="loot">Any loot x2 <br> Gold/Trinket</p>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/holy-water.png" alt="Holy Water"
+            title="An aura of strength engulfs the hero!">
+            <img class="item same-effect" src="provision-images/remedy-resolve.png" alt="Remedy of Resolve"
+            title="An aura of strength engulfs the hero!">
+          </div>
+          <div>
+            <p class="buff">50%: +10% DMG <br> &nbsp;&nbsp;&nbsp;&nbsp; +5 ACC <br>
+              &nbsp;&nbsp;&nbsp;&nbsp; +5% CRIT <br> 50%: +10 DODGE <br> &nbsp;&nbsp;&nbsp;&nbsp; +5 ACC <br>
+              &nbsp;&nbsp;&nbsp;&nbsp; +5% CRIT</p>
+          </div>
+        </div>
+
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/shovel.png" alt="Shovel"
+            title="You smash the head off and a loud wailing is heard in the distance.">
+          </div>
+          <div>
+            <p class="summon">Summon the Siren</p>
+          </div>
+        </div>
+      </td>
+      <td>        
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/dog-treats.png" alt="Dog Treats"
+            title="The oyster seems to like these...">
+          </div>
+          <div>
+            <p class="loot">Gold/Trinket x2 <br> Gold++ x2</p>
+          </div>
+        </div>
+
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/shovel.png" alt="Shovel"
+            title="The shovel prevents the oyster from closing.">
+          </div>
+          <div>
+            <p class="loot">Gold/Trinket x2 <br> Gold++</p>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="item-interaction">
+          <div>
+            <img class="item" src="provision-images/torch.png" alt="Torch"
+            title="You light the beautiful figure on fire...">
+          </div>
+          <div>
+            <p class="summon">Summon the Uca King</p>
+          </div>
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
+
 
 <audio autoplay id="narrator-audio">
   <source src="voiceover.ogg" type="audio/ogg">

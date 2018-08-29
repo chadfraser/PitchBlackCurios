@@ -2,7 +2,7 @@
 
 body {background: rgb(67, 67, 67) url("ancestor.png") no-repeat right fixed;}
 h1 {
-  color: white;
+  color: rgb(200, 200, 200);
   text-align:center;
   font-size: 80px;
 }
@@ -72,7 +72,8 @@ li:hover::before {
 
 /***** TABLE *****/
 
-table {table-layout: fixed; width: 100%;}
+.table {overflow-x: auto; margin: 0 5px;}
+table {table-layout: fixed;}
 table, th {
   border: 1px solid black;
   border-collapse: collapse;
@@ -81,7 +82,6 @@ table, th {
   color: rgb(200, 200, 200);
   text-align: center;
 }
-.leftcol {width: 5%;}
 td {
   border: 1px solid black;
   border-collapse: collapse;
@@ -90,7 +90,10 @@ td {
   vertical-align: top;
   margin: 0px;
   text-align:left;
+  min-width: 300px;
 }
+.leftcol {width: 100px}
+
 .curioimg {text-align: center;}
 img {
   height: 100%;
