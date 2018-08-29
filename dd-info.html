@@ -8,6 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="curio-layout.css">
 <title>Pitch Black Dungeon curios</title>
+<script src="table-display.js"></script>
 </head>
 
 <body>
@@ -17,15 +18,15 @@
 
 <div id="menu">
   <ul id="menu-tabs">
-    <li>Cove Curios</li>
-    <li>Weald Curios</li>
-    <li>Warrens Curios</li>
-    <li>Ruins Curios</li>
-    <li id="selected">Global Curios</li>
+    <li onclick="viewTable('cove', this)">Cove Curios</li>
+    <li onclick="viewTable('weald', this)">Weald Curios</li>
+    <li onclick="viewTable('warrens', this)">Warrens Curios</li>
+    <li onclick="viewTable('ruins', this)">Ruins Curios</li>
+    <li onclick="viewTable('global', this)" id="selected">Global Curios</li>
   </ul>
 </div>
 
-<div id="global" class="table">
+<div id="global" class="table selected-table">
   <table>
     <tr>
       <th class="leftcol">Curio</th>

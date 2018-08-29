@@ -72,8 +72,11 @@ li:hover::before {
 
 /***** TABLE *****/
 
-.table {overflow-x: auto; margin: 0 5px;}
+.table {overflow-x: auto; margin: 0 5px; display: none;}
 table {table-layout: fixed;}
+.selected-table {
+   display: block;
+}
 table, th {
   border: 1px solid black;
   border-collapse: collapse;
