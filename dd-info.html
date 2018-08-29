@@ -13,7 +13,17 @@
 <body>
 
 <h1>CURIOS</h1>
-<h2>Global Curios</h2>
+
+
+<div id="menu">
+  <ul id="menu-tabs">
+    <li>Cove Curios</li>
+    <li>Weald Curios</li>
+    <li>Warrens Curios</li>
+    <li>Ruins Curios</li>
+    <li id="selected">Global Curios</li>
+  </ul>
+</div>
 
 <table>
   <tr>
@@ -26,7 +36,7 @@
 
   <tr>
     <th class="leftcol">Image</th>
-    <td class="curioimg"><img src="curio-images/ancient-artifact.png" alt="Ancient Artifact"></td>
+    <td class="curioimg"><img src="curio-images/ancient-artifact.png" !--alt="Ancient Artifact"></td>
     <td class="curioimg"><img src="curio-images/crate.png" alt="Crate"></td>
     <td class="curioimg"><img src="curio-images/pack.png" alt="Discarded Pack"></td>
     <td class="curioimg"><img src="curio-images/eldritch-altar.png" alt="Eldritch Altar"></td>
@@ -46,7 +56,7 @@
       <p class="scouting">30%: Scouting</p>
       <p class="scouting indent">50%: Curios for 1 room</p>
       <p class="scouting indent">30%: All for 2 rooms</p>
-      <p class="scouting indent">50%: Hallway battles for 0 rooms</p>
+      <p class="scouting indent">20%: Hallway battles for 0 rooms</p>
       <p class="nothing">20%: Nothing</p>
     </td>
     <td>
@@ -141,8 +151,11 @@
       </div>
     </td>
   </tr>
-
-
+</table>
+  
+<br>
+  
+<table>
   <tr>
     <th class="leftcol">Curio</th>
     <th>Heirloom Chest</th>
@@ -290,7 +303,11 @@
       </div>
     </td>
   </tr>
+</table>
 
+<br>
+
+<table>
   <tr>
     <th class="leftcol">Curio</th>
     <th>Sconce</th>
@@ -319,7 +336,7 @@
     <td>
       <p class="negative">40%: Trap</p>
       <p class="negative indent">50%: Stress +25</p>
-      <p class="negative indent">50%: Torch -25</p>
+      <p class="negative indent">50%: Torchlight -25</p>
       <p class="nothing">40%: Random Quirk</p>
       <p class="positive indent">66%: Positive Quirk</p>
       <p class="negative indent">33%: Negative Quirk</p>

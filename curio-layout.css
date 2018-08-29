@@ -1,45 +1,78 @@
-body {
-  background-color: rgb(67, 67, 67);
-  background-image: url("ancestor.png");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-attachment: fixed;
-}
+/***** GENERAL *****/
+
+body {background: rgb(67, 67, 67) url("ancestor.png") no-repeat right fixed;}
 h1 {
   color: white;
   text-align:center;
   font-size: 80px;
 }
-h2 {color: white;}
-
 p {
-  font-family: "lucida console", monospace;
+  font-family: "Lucida console", Monaco, monospace;
   font-size: 14px;
   padding-left: 5px;
-  text-decoration: none;
   margin: 0px;
 }
-p.indent {padding-left: 30px;}
-.item-interaction {
+
+/***** MENU *****/
+
+#menu {width: 600px;}
+#menu-tabs {
   display:flex;
-  align-items:center;
+  flex-direction: row-reverse;
+  flex-wrap: flex-nowrap;
+  justify-content: flex-justify-between;
+  position: relative;
+  white-space: nowrap;
+  margin: auto;
+}
+li {
+	position: relative;
+	display: inline-block;
+	padding: 20px 20px 10px;
+	margin: 0 -7px;
+}
+li::before {
+	content: '';
+   position: absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
+	z-index: -1;
+	border: 1px solid black;
+   border-bottom: none;
+	border-radius: 10px 10px 0 0;
+	background: rgb(160, 160, 120);
+	transform: perspective(5px) rotateX(2deg);
+  	transform-origin: bottom;
+}
+li:hover::before {
+   background: white;
+}
+#selected {
+	z-index: 2;
+}
+#selected::before {
+	background: rgb(255, 255, 100);
+	border: 1px solid black;
+	margin-bottom: -1px;
+	border-top-width: 1px;
 }
 
-p.heirloom {color: rgb(140, 115, 190);}
-p.loot {color: rgb(250, 250, 0);}
-p.scouting {color: rgb(100, 255, 75);}
-p.buff {color: rgb(255, 180, 100);}
-p.summon {color: rgb(200, 125, 160);}
-p.negative {color: rgb(255, 80, 65);}
-p.positive {color: rgb(75, 180, 255);}
-p.nothing {color: rgb(200, 200, 200);}
-p.null {color: rgb(100, 100, 100); font-style: italic;}
+/***** PARAGRAPHS *****/
+
+.heirloom {color: rgb(140, 115, 190);}
+.loot {color: rgb(250, 250, 0);}
+.scouting {color: rgb(100, 255, 75);}
+.buff {color: rgb(255, 180, 100);}
+.summon {color: rgb(200, 125, 160);}
+.negative {color: rgb(255, 80, 65);}
+.positive {color: rgb(75, 180, 255);}
+.nothing {color: rgb(200, 200, 200);}
+.null {color: rgb(100, 100, 100); font-style: italic; font-weight: bold;}
+.indent {padding-left: 30px;}
+.item-interaction p {margin-bottom: 10px;}
+
+/***** TABLE *****/
 
 table {table-layout: fixed; width: 100%;}
-.leftcol {width: 5%;}
-
-table, tbody, tr, th, td {
-    background-color: rgba(0, 0, 0, 0.0);}
 table, th {
   border: 1px solid black;
   border-collapse: collapse;
@@ -48,6 +81,7 @@ table, th {
   color: rgb(200, 200, 200);
   text-align: center;
 }
+.leftcol {width: 5%;}
 td {
   border: 1px solid black;
   border-collapse: collapse;
@@ -57,14 +91,16 @@ td {
   margin: 0px;
   text-align:left;
 }
-
-td.curioimg {text-align: center;}
-
+.curioimg {text-align: center;}
 img {
   height: 100%;
   max-height: 100px;
 }
-img.item {
+.item {
   height: 50px;
   vertical-align: middle;
+}
+.item-interaction {
+  display: flex;
+  align-items: center;
 }
